@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Silom';
+    src: url(/assets/font/silom.ttf);
+}
+html {
+    width: 100%;
+}
+body {
+    font-family: Silom;
+    color: white;
+    background-color: #050a2f;
+}
+header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* border: solid red 2px; */
+    height: 10vh;
+}
+header #logoimg{
+    width: 4vw;
+    /* border: solid 2px green; */
+    margin: .5vw 1vw;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav #ulnav {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin: 0 0 0 0;
+    padding: 3vh 0vw;
+}
+#ulnav li a{
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 1.5vh 2vw;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
+#ulnav li a:hover{
+    color: #D654B7;
+    border: #FFFFFF 3px solid;
+    -webkit-transition: ease .3s;
+    transition: ease .3s;
+}
+header nav #ulnavStyle3 {
+    list-style-type: none;
+    display: flex;
+    float: right;
+    margin: 0 0 0 0;
+    padding: 3vh 0vw;
+    justify-content: space-between;
+    width: 100%;
+}
+#ulnavStyle3 li a{
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 1.5vh 2vw;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
+#ulnavStyle3 li a:hover{
+    color: #D654B7;
+    border: #FFFFFF 3px solid;
+    -webkit-transition: ease .3s;
+    transition: ease .3s;
+}
+#footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 10vh 0 0 0;
+}
+#footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 25px 50px;
+    margin: 0 3vw 0 3vw;
+    width: 90%;
+    font-size: 1.4rem;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+

@@ -1,0 +1,146 @@
+Dictionnaire de données 
+
+Nom : ID_user
+Code : ID_USER
+Type : AUTO_INCREMENT
+Taille : ,
+Commentaire : 
+
+Nom : lastname
+Code : LASTNAME
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : firstname
+Code : FIRSTNAME
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : email
+Code : EMAIL
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : pseudo
+Code : PSEUDO
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : password
+Code : PASSWORD
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : connected
+Code : CONNECTED
+Type : BOOL
+Taille : ,
+Commentaire : 
+
+Nom : ID_character
+Code : ID_CHARACTER
+Type : AUTO_INCREMENT
+Taille : ,
+Commentaire : 
+
+Nom : experience
+Code : EXPERIENCE
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : money
+Code : MONEY
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : strength
+Code : STRENGTH
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : intelligence
+Code : INTELLIGENCE
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : agility
+Code : AGILITY
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : chance
+Code : CHANCE
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : wisdom
+Code : WISDOM
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : unused_statspoint
+Code : UNUSED_STATSPOINT
+Type : INT
+Taille : ,
+Commentaire : 
+
+Nom : ID_skin
+Code : ID_SKIN
+Type : AUTO_INCREMENT
+Taille : ,
+Commentaire : 
+
+Nom : skin_name
+Code : SKIN_NAME
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : skin_image
+Code : SKIN_IMAGE
+Type : TEXT
+Taille : ,
+Commentaire : 
+
+Nom : ID_chat
+Code : ID_CHAT
+Type : AUTO_INCREMENT
+Taille : ,
+Commentaire : 
+
+Nom : name_chat
+Code : NAME_CHAT
+Type : VARCHAR
+Taille : 50,
+Commentaire : 
+
+Nom : ID_message
+Code : ID_MESSAGE
+Type : AUTO_INCREMENT
+Taille : 50,
+Commentaire : 
+
+Nom : message_content
+Code : MESSAGE_CONTENT
+Type : VARCHAR
+Taille : 255,
+Commentaire : 
+
+Nom : message_created_at
+Code : MESSAGE_CREATED_AT
+Type : DATETIME
+Taille : 255,
+Commentaire : 
+
