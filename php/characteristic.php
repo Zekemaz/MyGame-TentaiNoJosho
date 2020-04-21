@@ -49,9 +49,9 @@
                             <br><br>
                             <span class="spanFaction">
                                 Chikyūjin at first,
-                                they turned into evil persona by the arrival of the Tentai. Will you join them
-                                and help them fight off these beings considered like deities.
-                                Choose the Aku'No faction and destroy the Tentai
+                                turned towards evil on the arrival of the Tentai. Will you join them
+                                and help them fight off these other beings.
+                                Choose the Aku'No faction and destroy the Tentai.
                             </span>
                         </span>
                     </label>
@@ -67,22 +67,22 @@
                 <div id="skill_div">
                     <label class="labelSkill" for="strength" id="skill_0">
                         <input class="radioSkill" type="radio" name="skill[]" value="Strength" id="strength"/>
-                        <span class="spanSkill" id="spanSkill_0">Strength</span>
+                        <span class="spanSkill" id="spanSkill_0"><strong>Strength</strong></span>
                     </label>
 
                     <label class="labelSkill" for="intelligence" id="skill_1">
                         <input class="radioSkill" type="radio" name="skill[]" value="Intelligence" id="intelligence"/>
-                        <span class="spanSkill" id="spanSkill_1">Intelligence</span>
+                        <span class="spanSkill" id="spanSkill_1"><strong>Intelligence</strong></span>
                     </label>
 
                     <label class="labelSkill" for="agility" id="skill_2">
                         <input class="radioSkill" type="radio" name="skill[]" value="Agility" id="agility"/>
-                        <span class="spanSkill" id="spanSkill_2">Agility</span>
+                        <span class="spanSkill" id="spanSkill_2"><strong>Agility</strong></span>
                     </label>
 
                     <label class="labelSkill" for="chance" id="skill_3">
                         <input class="radioSkill" type="radio" name="skill[]" value="Chance" id="chance"/>
-                        <span class="spanSkill" id="spanSkill_3">Chance</span>
+                        <span class="spanSkill" id="spanSkill_3"><strong>Chance</strong></span>
                     </label>
 
                 </div>

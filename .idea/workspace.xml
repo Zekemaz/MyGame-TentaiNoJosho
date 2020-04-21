@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="" />
+    <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/ClassDiagram.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/ClassDiagram.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/MCDJmerise" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/MCDJmerise" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/data_dictionnary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/data_dictionnary.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/PressStartFont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/font/VT323-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/characteristic.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/characteristic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/gamestory.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/gamestory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/header1.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/contentstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contentstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +33,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP_7.3.8" />
   <component name="ProjectId" id="1Zx5ic6FP5ZIlqHPzH0UHOofskx" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -75,7 +92,8 @@
       <workItem from="1586856617018" duration="8813000" />
       <workItem from="1586936668416" duration="12171000" />
       <workItem from="1587020645454" duration="116000" />
-      <workItem from="1587044368618" duration="8207000" />
+      <workItem from="1587044368618" duration="8691000" />
+      <workItem from="1587471775936" duration="4525000" />
     </task>
     <servers />
   </component>
@@ -151,10 +169,10 @@
       <screen x="0" y="23" width="1280" height="719" />
     </state>
     <state width="1218" height="206" key="GridCell.Tab.2.right/0.23.1280.719@0.23.1280.719" timestamp="1585776326747" />
-    <state x="458" y="313" key="NewPhpFileDialog" timestamp="1587062721799">
+    <state x="458" y="313" key="NewPhpFileDialog" timestamp="1587474306560">
       <screen x="0" y="23" width="1280" height="719" />
     </state>
-    <state x="458" y="313" key="NewPhpFileDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1587062721799" />
+    <state x="458" y="313" key="NewPhpFileDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1587474306560" />
     <state x="1967" y="449" key="NewPhpFileDialog/0.23.1280.719/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585817954379" />
     <state x="458" y="313" key="NewPhpFileDialog/0.23.1280.719@0.23.1280.719" timestamp="1585816162014" />
     <state x="458" y="336" key="NewPhpFileDialog/0.23.1280.777/1280.23.1920.999@0.23.1280.777" timestamp="1587060596589" />
@@ -163,10 +181,10 @@
     </state>
     <state x="1510" y="23" key="SettingsEditor/0.23.1280.719/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585817915705" />
     <state x="141" y="23" width="997" height="719" key="SettingsEditor/0.23.1280.719@0.23.1280.719" timestamp="1586879253312" />
-    <state x="317" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1587044383120">
+    <state x="317" y="215" key="com.intellij.ide.util.TipDialog" timestamp="1587471871249">
       <screen x="0" y="23" width="1280" height="719" />
     </state>
-    <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1587044383120" />
+    <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1587471871249" />
     <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.719@0.23.1280.719" timestamp="1587020651233" />
     <state x="317" y="48" key="scopes" timestamp="1585773737226">
       <screen x="0" y="23" width="1280" height="719" />

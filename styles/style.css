@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Silom';
-    src: url(/assets/font/silom.ttf);
+    font-family: 'Roboto';
+    src: url(../assets/font/Roboto-Light.ttf);
 }
 html {
     width: 100%;
 }
 body {
-    font-family: Silom;
+    font-family: Roboto;
     color: white;
     background-color: #050a2f;
 }
@@ -80,6 +80,7 @@ header nav #ulnavStyle3 {
     width: 100%;
     justify-content: space-between;
     margin: 10vh 0 0 0;
+    bottom: 2vh;
 }
 #footer ul {
     display: -webkit-box;

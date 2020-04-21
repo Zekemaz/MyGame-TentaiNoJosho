@@ -141,6 +141,12 @@ Commentaire :
 Nom : message_created_at
 Code : MESSAGE_CREATED_AT
 Type : DATETIME
-Taille : 255,
+Taille : ,
+Commentaire : 
+
+Nom : date_of_birth
+Code : DATE_OF_BIRTH
+Type : DATE
+Taille : ,
 Commentaire : 
 

@@ -5,14 +5,14 @@
     <title>Tentai No Jōshō</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="styles/contentstyle.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/contentstyle.css">
 
 </head>
 <body>
 <section id="global"> <!-- global section -->
 
-    <?php include("php/header1.php") ?>
+    <?php include("header1.php") ?>
 
     <section id="content_section"> <!-- content section -->
         <div id="h1div">
@@ -53,14 +53,14 @@
         </p>
 
         <div id="h2div">
-            <h2 id='home'><a href="index.php">Home</a></h2>
+            <h2 id='home'><a href="../index.php">Home</a></h2>
         </div>
 
 
     </section> <!-- end content section -->
 
 
-    <?php include("php/footer.php") ?>
+    <?php include("footer.php") ?>
 
 </section> <!-- end global section -->
 

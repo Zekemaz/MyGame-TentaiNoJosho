@@ -12,20 +12,43 @@
 <body>
 <section id="global"> <!-- global section -->
 
-    <?php include("php/header1.php") ?>
+    <section id="header_section"> <!-- header section -->
+
+        <header id="header">
+
+            <nav id="nav">
+                <div id="logodiv"><a href="index.php"><img id="logoimg" src="assets/images/ninjalogo.svg" alt="ninjalogo"></a></div>
+                <ul id="ulnav">
+                    <li><a href="php/sign_up.php">Sign up</a></li>
+                    <li><a href="php/sign_in.php">Sign in</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    </section> <!-- end header section -->
 
     <section id="content_section"> <!-- content section -->
         <div id="h1div">
             <h1 id='gametitle'>Tentai no Jōshō</h1>
         </div>
         <div id="h3div">
-            <h3 id="gamestory"><a href="gamestory.php">Game Story</a></h3>
+            <h3 id="gamestory"><a href="php/gamestory.php">Game Story</a></h3>
         </div>
     </section> <!-- end content section -->
 
 
-    <?php include("php/footer.php") ?>
+    <section id="footer_section"> <!-- footer section -->
 
+        <footer id="footer">
+            <ul>
+                <li><a href="#">General Conditions</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">The creator</a></li>
+            </ul>
+        </footer>
+
+    </section> <!-- end footer section -->
 </section> <!-- end global section -->
 
 

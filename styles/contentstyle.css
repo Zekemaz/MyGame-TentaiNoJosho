@@ -1,12 +1,16 @@
 /* style for all the 'MAIN' content*/
+#h1div{
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0 0 0;
+}
 #h1div > h1
 {
     font-size: 3rem;
     text-align: center;
     border: #D654B7 3px solid;
     border-radius: 7px;
-    padding: 15px 2vw;
-    margin: 18vh 30vw 0vw 30vw;
+    padding: 2vh 2vw;
 }
 p
 {
@@ -68,15 +72,9 @@ p
 }
 #h3div
 {
-    align-items: center;
-    width: 20vw;
-    margin: 0 40vw;
-}
-#h3div #gamestory
-{
-    margin: auto;
-    margin-top: 25vh;
-    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+    margin: 10vh 0;
 }
 #h3div a
 {
@@ -148,9 +146,9 @@ width: 12vw;
     padding: 15px 1vw;
     background: #050a2f;
     color: #FFFFFF;
-    font-family: Silom;
     font-size: 1.4rem;
     margin: 6vh 0 0 0;
+    cursor: pointer;
 }
 #submit:hover{
 color: #D654B7;
@@ -165,9 +163,9 @@ transition: ease .3s;
     padding: 15px 1vw;
     background: #050a2f;
     color: #FFFFFF;
-    font-family: Silom;
     font-size: 1.4rem;
     margin: 6vh 0 0 0;
+    cursor: pointer;
 
 }
 #submit_connect:hover{
@@ -182,6 +180,10 @@ transition: ease .3s;
     border: #D654B7 3px solid;
     border-radius: 7px;
     padding: 2vh 1vw;
+    font-size: 1.4rem;
+}
+#presentation2{
+    margin-bottom: 5vh;
 }
 #faction_div
 {
@@ -201,22 +203,22 @@ transition: ease .3s;
     width: 40%;
     outline: none;
     color: #FFFFFF;
-    font-family: Silom;
     font-size: 1.4rem;
     display: block;
+
 }
 .titleSpan
 {
     font-size: 1.4rem;
+    padding: 5vh 1vw;
+    display: block;
     border: #D654B7 3px solid;
     background: #050a2f;
     border-radius: 7px;
-    padding: 5vh 1vw;
-    display: block;
 }
 .spanFaction
 {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 label input[type=radio]:checked ~ .titleSpan
 {
@@ -232,8 +234,7 @@ label input[type=radio]:checked ~ .titleSpan
 {
     padding: 2vh 2vw;
     text-align: center;
-    font-family: Silom;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     background: #050a2f;
     border-radius: 7px;
     cursor: pointer;
@@ -295,7 +296,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     text-align: center;
     background: #050a2f;
     color: #FFFFFF;
-    font-family: Silom;
     font-size: 1.4rem;
     outline: none;
 }
@@ -641,4 +641,122 @@ label input[type=radio]:checked ~ #spanSkill_3
     color: #FFFFFF;
     font-size: 1.4rem;
     font-family: 'Silom';
+}
+/* ----------------------------- Game story page ----------------------------- */
+#content_section_attackfinished {
+    width: 50vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#attackMenuDiv {
+    margin-top: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#attackMenuDiv #attackMenuTitle {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 2vh 2vw;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#secondTitleDiv {
+    margin: 5vh 0 5vh 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#secondTitleDiv p {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 2vh 2vw;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#thirdDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    font-size: 1.4rem;
+}
+
+#thirdDiv div {
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+#thirdDiv div div {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 2vh 2vw;
+}
+
+#thirdDiv button {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    background: none;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    font-family: Orbitron;
+}
+
+#fourthDiv {
+    font-size: 1.4rem;
+    margin-top: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+#fourthDiv a {
+    text-decoration: none;
+    color: #FFFFFF;
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 2vh 2vw;
+    cursor: pointer;
+}
+
+#fourthDiv a:hover {
+    border: #FFFFFF 3px solid;
+    border-radius: 7px;
+    color: #D654B7;
+    -webkit-transition: ease .3s;
+    transition: ease .3s;
 }
