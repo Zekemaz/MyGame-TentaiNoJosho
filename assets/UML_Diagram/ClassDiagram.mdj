@@ -254,7 +254,7 @@
 											"top": 429,
 											"width": 202.087890625,
 											"height": 13,
-											"text": "+message_content: string",
+											"text": "+content: string",
 											"horizontalAlignment": 0
 										},
 										{
@@ -271,7 +271,7 @@
 											"top": 444,
 											"width": 202.087890625,
 											"height": 13,
-											"text": "+message_created_at: datetime",
+											"text": "+created_at: datetime",
 											"horizontalAlignment": 0
 										},
 										{
@@ -288,7 +288,7 @@
 											"top": 459,
 											"width": 202.087890625,
 											"height": 13,
-											"text": "+message_author: User",
+											"text": "+author: User",
 											"horizontalAlignment": 0
 										}
 									],
@@ -1810,7 +1810,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFxgvYC6D2Dvcw="
 							},
-							"name": "message_content",
+							"name": "content",
 							"type": "string"
 						},
 						{
@@ -1819,7 +1819,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFxgvYC6D2Dvcw="
 							},
-							"name": "message_created_at",
+							"name": "created_at",
 							"type": "datetime"
 						},
 						{
@@ -1828,7 +1828,7 @@
 							"_parent": {
 								"$ref": "AAAAAAFxgvYC6D2Dvcw="
 							},
-							"name": "message_author",
+							"name": "author",
 							"type": {
 								"$ref": "AAAAAAFxgtssKTp9Ayc="
 							}

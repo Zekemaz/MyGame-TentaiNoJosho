@@ -8,13 +8,13 @@
 #------------------------------------------------------------
 
 CREATE TABLE user(
-        ID_user   Int  Auto_increment  NOT NULL ,
-        lastname  Varchar (50) NOT NULL ,
-        firstname Varchar (50) NOT NULL ,
-        email     Varchar (50) NOT NULL ,
-        pseudo    Varchar (50) NOT NULL ,
-        password  Varchar (50) NOT NULL ,
-        connected Bool NOT NULL
+        ID_user       Int  Auto_increment  NOT NULL ,
+        lastname      Varchar (50) NOT NULL ,
+        firstname     Varchar (50) NOT NULL ,
+        date_of_birth Date NOT NULL ,
+        email         Varchar (50) NOT NULL ,
+        pseudo        Varchar (20) NOT NULL ,
+        password      Varchar (36) NOT NULL ,
 	,CONSTRAINT user_PK PRIMARY KEY (ID_user)
 )ENGINE=InnoDB;
 
@@ -56,17 +56,6 @@ CREATE TABLE character(
 
 
 #------------------------------------------------------------
-# Table: chat
-#------------------------------------------------------------
-
-CREATE TABLE chat(
-        ID_chat   Int  Auto_increment  NOT NULL ,
-        name_chat Varchar (50) NOT NULL
-	,CONSTRAINT chat_PK PRIMARY KEY (ID_chat)
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
 # Table: message
 #------------------------------------------------------------
 
@@ -74,11 +63,10 @@ CREATE TABLE message(
         ID_message         Int  Auto_increment  NOT NULL ,
         message_content    Varchar (255) NOT NULL ,
         message_created_at Datetime NOT NULL ,
-        ID_chat            Int NOT NULL ,
+        message_author     Varchar (20) NOT NULL ,
         ID_user            Int NOT NULL
 	,CONSTRAINT message_PK PRIMARY KEY (ID_message)
 
-	,CONSTRAINT message_chat_FK FOREIGN KEY (ID_chat) REFERENCES chat(ID_chat)
-	,CONSTRAINT message_user0_FK FOREIGN KEY (ID_user) REFERENCES user(ID_user)
+	,CONSTRAINT message_user_FK FOREIGN KEY (ID_user) REFERENCES user(ID_user)
 )ENGINE=InnoDB;
 

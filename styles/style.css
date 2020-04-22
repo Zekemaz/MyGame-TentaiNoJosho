@@ -80,7 +80,6 @@ header nav #ulnavStyle3 {
     width: 100%;
     justify-content: space-between;
     margin: 10vh 0 0 0;
-    bottom: 2vh;
 }
 #footer ul {
     display: -webkit-box;
@@ -93,8 +92,7 @@ header nav #ulnavStyle3 {
     justify-content: space-between;
     border: #D654B7 3px solid;
     border-radius: 7px;
-    padding: 25px 50px;
-    margin: 0 3vw 0 3vw;
+    padding: 3vh 6vw;
     width: 90%;
     font-size: 1.4rem;
 }

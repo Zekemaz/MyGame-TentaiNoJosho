@@ -298,6 +298,7 @@ label input[type=radio]:checked ~ #spanSkill_3
     color: #FFFFFF;
     font-size: 1.4rem;
     outline: none;
+    cursor: pointer;
 }
 #submit_character:hover{
     color: #D654B7;

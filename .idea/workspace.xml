@@ -3,15 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/Capture d’écran 2020-04-17 à 18.19.00.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/ClassDiagram.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/ClassDiagram.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/ClassDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/Class_Diagram.mdj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/MCD.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/MCD.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/MCDJmerise" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/MCDJmerise" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/data_dictionnary.txt" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/data_dictionnary.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/PressStartFont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/font/VT323-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/characteristic.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/characteristic.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/gamestory.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/gamestory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/header1.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/MLD.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/MLD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/Player_UseCaseDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/UseCaseDiagram.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/UseCaseDiagram.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/UseCaseDiagram.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/scriptsql.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cahier_des_charges_Gabriel_DS.docx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/cahier_des_charges_Gabriel_DS.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/contentstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contentstyle.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
     </list>
@@ -93,7 +96,7 @@
       <workItem from="1586936668416" duration="12171000" />
       <workItem from="1587020645454" duration="116000" />
       <workItem from="1587044368618" duration="8691000" />
-      <workItem from="1587471775936" duration="4525000" />
+      <workItem from="1587471775936" duration="6198000" />
     </task>
     <servers />
   </component>
