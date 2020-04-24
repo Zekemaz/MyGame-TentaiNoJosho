@@ -36,7 +36,7 @@
                             <br><br>
                             <span class="spanFaction">
                                 They are deities
-                                arrived from the sky. They only want good for the Chikyūjin
+                                arrived from the sky. They only want good for the Chikyujin
                                 but are being killed by the relentless Aku'No clan. Choose them,
                                 train and you will maybe become a Ten'Nin.
                             </span>
@@ -48,7 +48,7 @@
                             Aku'No
                             <br><br>
                             <span class="spanFaction">
-                                Chikyūjin at first,
+                                Chikyujin at first,
                                 turned towards evil on the arrival of the Tentai. Will you join them
                                 and help them fight off these other beings.
                                 Choose the Aku'No faction and destroy the Tentai.

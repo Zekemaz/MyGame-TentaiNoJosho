@@ -106,7 +106,7 @@
                         </span>
                     </span>
                 <span class="firstSpan">
-                        Taimupīsu
+                        Money
                         <span class="secondSpan">
                             0
                         </span>

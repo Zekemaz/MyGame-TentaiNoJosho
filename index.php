@@ -29,7 +29,7 @@
 
     <section id="content_section"> <!-- content section -->
         <div id="h1div">
-            <h1 id='gametitle'>Tentai no Jōshō</h1>
+            <h1 id='gametitle'>Tentai no Josho</h1>
         </div>
         <div id="h3div">
             <h3 id="gamestory"><a href="php/gamestory.php">Game Story</a></h3>

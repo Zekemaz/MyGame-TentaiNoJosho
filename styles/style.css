@@ -1,12 +1,12 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url(../assets/font/Roboto-Light.ttf);
+    font-family: 'Orbitron';
+    src: url(../assets/font/Orbitron.ttf);
 }
 html {
     width: 100%;
 }
 body {
-    font-family: Roboto;
+    font-family: Orbitron;
     color: white;
     background-color: #050a2f;
 }

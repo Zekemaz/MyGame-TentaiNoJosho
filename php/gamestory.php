@@ -21,24 +21,24 @@
 
         <p>
             In the beginning there was only peace, that peace which
-            subsisted for thousands of years among the Chikyūjin.
+            subsisted for thousands of years among the Chikyujin.
             These people knew how to exploit the resources of their land
             in every corner while respecting it. Everybody
             was united and there was no war. One day a new people came from the sky,
             they called themselves the Tentai.
             <br><br>
-            Upon their arrival on Chikyū, some inhabitants welcomed them and considered them
+            Upon their arrival on Chikyu, some inhabitants welcomed them and considered them
             like deities, superior beings, while others
             filled with jealousy, greed and simple fear of the unknown
-            decided to confine themselves in the hidden places of Chikyū. Realizing
-            that they were thousands of scared Chikyūjin they decided to create the clan of
-            Aku'No (Evil). Their goal was to open the eyes of all Chikyū so that they
+            decided to confine themselves in the hidden places of Chikyu. Realizing
+            that they were thousands of scared Chikyujin they decided to create the clan of
+            Aku'No (Evil). Their goal was to open the eyes of all Chikyu so that they
             could see how much chaos the arrival of the Tentai caused.
 
             <br><br>The Tentai offered their help only to those in need or those who ask.
-            They then chose to train the Chikyūjin to teach them their
+            They then chose to train the Chikyujin to teach them their
             magic and power. Over the years only a few
-            Chikyūjin managed to reach the title of Ten’Nin.
+            Chikyujin managed to reach the title of Ten’Nin.
             Reaching their level requires years of practice and training and
             is described by the phrase 'Tentai no Jōshō'.
             As of today no one is asking to be trained and Tentai die day after day

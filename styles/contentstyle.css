@@ -134,9 +134,9 @@ width: 12vw;
 font-size: 1.4rem;
 }
 .form1 input{
-border: #D654B7 2px solid;
-border-radius: 2px;
-width: 12vw;
+    border: #D654B7 2px solid;
+    border-radius: 2px;
+    width: 12vw;
     outline: none;
 }
 #submit
@@ -149,6 +149,7 @@ width: 12vw;
     font-size: 1.4rem;
     margin: 6vh 0 0 0;
     cursor: pointer;
+    font-family: Orbitron;
 }
 #submit:hover{
 color: #D654B7;
@@ -166,6 +167,7 @@ transition: ease .3s;
     font-size: 1.4rem;
     margin: 6vh 0 0 0;
     cursor: pointer;
+    font-family: Orbitron;
 
 }
 #submit_connect:hover{
@@ -299,6 +301,7 @@ label input[type=radio]:checked ~ #spanSkill_3
     font-size: 1.4rem;
     outline: none;
     cursor: pointer;
+    font-family: Orbitron;
 }
 #submit_character:hover{
     color: #D654B7;
@@ -641,7 +644,7 @@ label input[type=radio]:checked ~ #spanSkill_3
     background: none;
     color: #FFFFFF;
     font-size: 1.4rem;
-    font-family: 'Silom';
+    font-family: Orbitron;
 }
 /* ----------------------------- Game story page ----------------------------- */
 #content_section_attackfinished {
