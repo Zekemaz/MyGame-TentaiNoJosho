@@ -49,6 +49,11 @@ header nav #ulnav {
     -webkit-transition: ease .3s;
     transition: ease .3s;
 }
+#ulnav li a:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
+}
 header nav #ulnavStyle3 {
     list-style-type: none;
     display: flex;
@@ -72,6 +77,11 @@ header nav #ulnavStyle3 {
     border: #FFFFFF 3px solid;
     -webkit-transition: ease .3s;
     transition: ease .3s;
+}
+#ulnavStyle3 li a:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
 }
 #footer {
     display: -webkit-box;

@@ -12,7 +12,7 @@
     border-radius: 7px;
     padding: 2vh 2vw;
 }
-p
+#gamestory_p
 {
     border: #D654B7 3px solid;
     border-radius: 7px;
@@ -70,6 +70,11 @@ p
     -webkit-transition: ease .3s;
     transition: ease .3s;
 }
+#h2div a:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
+}
 #h3div
 {
     display: flex;
@@ -91,6 +96,11 @@ p
     border: #FFFFFF 3px solid;
     -webkit-transition: ease .3s;
     transition: ease .3s;
+}
+#h3div a:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
 }
 /* ----------------------------- Forms style ----------------------------- */
 #form_characteristic{
@@ -157,6 +167,11 @@ border: #FFFFFF 3px solid;
 -webkit-transition: ease .3s;
 transition: ease .3s;
 }
+#submit:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
+}
 #submit_connect
 {
     border: #D654B7 3px solid;
@@ -175,6 +190,11 @@ color: #D654B7;
 border: #FFFFFF 3px solid;
 -webkit-transition: ease .3s;
 transition: ease .3s;
+}
+#submit_connect:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
 }
 /*choose faction and characteristic style*/
 #formdiv_characteristic #presentation1, #presentation2
@@ -309,6 +329,11 @@ label input[type=radio]:checked ~ #spanSkill_3
     -webkit-transition: ease .3s;
     transition: ease .3s;
 }
+#submit_character:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
+}
 .clear {
     display: block;
     clear: both;
@@ -316,7 +341,7 @@ label input[type=radio]:checked ~ #spanSkill_3
 }
 /* ----------------------------- Profile style ----------------------------- */
 #optionDiv {
-    margin-top: 10vh;
+    margin-top: 2vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -359,6 +384,11 @@ label input[type=radio]:checked ~ #spanSkill_3
     border: #FFFFFF 3px solid;
     -webkit-transition: ease .3s;
     transition: ease .3s;
+}
+#optionDiv #optionNav li a:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
 }
 #mainContentDiv {
     margin-top: 10vh;
@@ -498,24 +528,24 @@ label input[type=radio]:checked ~ #spanSkill_3
     background-image: url(../assets/images/agilityminusfocus.svg);
     background-repeat: no-repeat;
 }
-#mainContentDiv #characteristicDiv div #imageSpan #chanceButtonPlus {
-    background-image: url(../assets/images/chanceplus.svg);
+#mainContentDiv #characteristicDiv div #imageSpan #luckButtonPlus {
+    background-image: url(../assets/images/luckplus.svg);
     background-repeat: no-repeat;
     width: 3vw;
     cursor: pointer;
 }
-#mainContentDiv #characteristicDiv div #imageSpan #chanceButtonPlus:active {
-    background-image: url(../assets/images/chanceplusfocus.svg);
+#mainContentDiv #characteristicDiv div #imageSpan #luckButtonPlus:active {
+    background-image: url(../assets/images/luckplusfocus.svg);
     background-repeat: no-repeat;
 }
-#mainContentDiv #characteristicDiv div #imageSpan #chanceButtonMinus {
-    background-image: url(../assets/images/chanceminus.svg);
+#mainContentDiv #characteristicDiv div #imageSpan #luckButtonMinus {
+    background-image: url(../assets/images/luckminus.svg);
     background-repeat: no-repeat;
     width: 3vw;
     cursor: pointer;
 }
-#mainContentDiv #characteristicDiv div #imageSpan #chanceButtonMinus:active {
-    background-image: url(../assets/images/chanceminusfocus.svg);
+#mainContentDiv #characteristicDiv div #imageSpan #luckButtonMinus:active {
+    background-image: url(../assets/images/luckminusfocus.svg);
     background-repeat: no-repeat;
 }
 #mainContentDiv #characteristicDiv div .pointSpan {
@@ -547,10 +577,10 @@ label input[type=radio]:checked ~ #spanSkill_3
 #mainContentDiv #characteristicDiv div #agilityPointSpan {
     border: #37B253 3px solid;
 }
-#mainContentDiv #characteristicDiv div #chanceSpan {
+#mainContentDiv #characteristicDiv div #luckSpan {
     border: #FDC236 3px solid;
 }
-#mainContentDiv #characteristicDiv div #chancePointSpan {
+#mainContentDiv #characteristicDiv div #luckPointSpan {
     border: #FDC236 3px solid;
 }
 #mainContentDiv #characteristicDiv div #wisdomSpan {
@@ -559,7 +589,7 @@ label input[type=radio]:checked ~ #spanSkill_3
 #mainContentDiv #characteristicDiv div #wisdomPointSpan {
     border: #98C6D8 3px solid;
 }
-#mainContentDiv #unusedPointDiv {
+#mainContentDiv #sideDiv {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -571,11 +601,11 @@ label input[type=radio]:checked ~ #spanSkill_3
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 }
-#mainContentDiv #unusedPointDiv .firstSpan {
+#mainContentDiv #sideDiv .firstSpan {
     font-size: 1.4rem;
     text-align: center;
 }
-#mainContentDiv #unusedPointDiv .secondSpan {
+#mainContentDiv #sideDiv .secondSpan {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -646,7 +676,7 @@ label input[type=radio]:checked ~ #spanSkill_3
     font-size: 1.4rem;
     font-family: Orbitron;
 }
-/* ----------------------------- Game story page ----------------------------- */
+/* ----------------------------- Finished attack page ----------------------------- */
 #content_section_attackfinished {
     width: 50vw;
     display: -webkit-box;
@@ -661,7 +691,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     justify-content: center;
     margin: auto;
 }
-
 #attackMenuDiv {
     margin-top: 10vh;
     display: -webkit-box;
@@ -671,7 +700,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     -ms-flex-pack: center;
     justify-content: center;
 }
-
 #attackMenuDiv #attackMenuTitle {
     border: #D654B7 3px solid;
     border-radius: 7px;
@@ -681,7 +709,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     text-decoration: none;
     color: #FFFFFF;
 }
-
 #secondTitleDiv {
     margin: 5vh 0 5vh 0;
     display: -webkit-box;
@@ -691,7 +718,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     -ms-flex-pack: center;
     justify-content: center;
 }
-
 #secondTitleDiv p {
     border: #D654B7 3px solid;
     border-radius: 7px;
@@ -701,7 +727,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     text-decoration: none;
     color: #FFFFFF;
 }
-
 #thirdDiv {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -710,7 +735,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     justify-content: space-around;
     font-size: 1.4rem;
 }
-
 #thirdDiv div {
     text-align: center;
     display: -webkit-box;
@@ -721,13 +745,11 @@ label input[type=radio]:checked ~ #spanSkill_3
     -ms-flex-direction: column;
     flex-direction: column;
 }
-
 #thirdDiv div div {
     border: #D654B7 3px solid;
     border-radius: 7px;
     padding: 2vh 2vw;
 }
-
 #thirdDiv button {
     border: #D654B7 3px solid;
     border-radius: 7px;
@@ -736,7 +758,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     font-size: 1.4rem;
     font-family: Orbitron;
 }
-
 #fourthDiv {
     font-size: 1.4rem;
     margin-top: 10vh;
@@ -747,7 +768,6 @@ label input[type=radio]:checked ~ #spanSkill_3
     -ms-flex-pack: center;
     justify-content: center;
 }
-
 #fourthDiv a {
     text-decoration: none;
     color: #FFFFFF;
@@ -756,11 +776,252 @@ label input[type=radio]:checked ~ #spanSkill_3
     padding: 2vh 2vw;
     cursor: pointer;
 }
-
 #fourthDiv a:hover {
     border: #FFFFFF 3px solid;
     border-radius: 7px;
     color: #D654B7;
     -webkit-transition: ease .3s;
     transition: ease .3s;
+}
+#fourthDiv a:active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
+}
+/* ----------------------------- Training page ----------------------------- */
+#content_section_training {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#trainingMenuDiv {
+    margin-top: 2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#trainingMenuDiv #trainingMenuTitle {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 2vh 2vw;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#explicationDiv {
+    margin: 2vh 0 2vh 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#explicationDiv p {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 2vh 2vw;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#trainingDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+#trainingDiv #traininglogo {
+    width: 35%;
+    opacity: 50%;
+}
+#trainingDiv #trainBtnDiv button {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 2vh 2vw;
+    background: #050a2f;
+    color: #FFFFFF;
+    font-family: Orbitron;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#trainingDiv #trainBtnDiv :hover {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    -webkit-transition: ease .3s;
+    transition: ease .3s;
+}
+#trainingDiv #trainBtnDiv :active {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    background: #FFFFFF;
+}
+#trainingDiv #timeDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+#trainingDiv #timeDiv #span2 {
+    font-size: 1.4rem;
+}
+#trainingDiv #timeDiv #span2 {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 2vh 2vw;
+    font-size: 1.2rem;
+}
+/* ----------------------------- Leaderboard page ----------------------------- */
+#leaderboardTitle {
+    margin-top: 2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#leaderboardTitle h1 {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 2vh 2vw;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#leaderboardTable {
+    margin-top: 5vh;
+}
+#leaderboardTable table {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+#leaderboardTable table th[scope="row"] {
+    border: #D654B7 3px solid;
+}
+#leaderboardTable table span {
+    border: #F24444 3px solid;
+    border-radius: 7px;
+}
+/* ----------------------------- Chat page ----------------------------- */
+#chatTitle {
+    margin-top: 2vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#chatTitle h1 {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    margin: 0px 20px;
+    padding: 2vh 2vw;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#chatDiv {
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+#chatDiv #leftDiv {
+    margin: 0 2vw 0 0;
+}
+#chatDiv #leftDiv div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+#chatDiv #leftDiv div button {
+    margin: 1vh 0;
+    background-color: #050a2f;
+    color: #FFFFFF;
+    font-family: Orbitron;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#chatDiv #rightDiv {
+    width: 50vw;
+    height: 60vh;
+}
+#chatDiv #rightDiv #messageArea {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 2vh 2vw;
+    background-color: #FFFFFF;
+    opacity: 60%;
+    height: 70%;
+}
+#chatDiv #rightDiv #btnTxtArea {
+    margin: 1vh 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+#chatDiv #rightDiv #btnTxtArea #sendBtn {
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    background-color: #050a2f;
+    color: #FFFFFF;
+    font-family: Orbitron;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 8vw;
+}
+#chatDiv #rightDiv #btnTxtArea #sendBtn:hover {
+    border: #FFFFFF 3px solid;
+    color: #D654B7;
+    font-family: Orbitron;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 8vw;
+}
+#chatDiv #rightDiv #btnTxtArea #sendBtn:active {
+    border: #FFFFFF 3px solid;
+    background-color: #FFFFFF;
+    color: #D654B7;
+    font-family: Orbitron;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 8vw;
+}
+#chatDiv #rightDiv #btnTxtArea #textArea {
+    width: 40vw;
 }

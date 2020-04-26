@@ -80,10 +80,10 @@
                         <span class="spanSkill" id="spanSkill_2"><strong>Agility</strong></span>
                     </label>
 
-                    <label class="labelSkill" for="chance" id="skill_3">
-                        <input class="radioSkill" type="radio" name="skill[]" value="Chance" id="chance"/>
-                        <span class="spanSkill" id="spanSkill_3"><strong>Chance</strong></span>
-                    </label>
+<!--                    <label class="labelSkill" for="chance" id="skill_3">-->
+<!--                        <input class="radioSkill" type="radio" name="skill[]" value="Chance" id="chance"/>-->
+<!--                        <span class="spanSkill" id="spanSkill_3"><strong>Chance</strong></span>-->
+<!--                    </label>-->
 
                 </div>
                 <br class="clear"/>

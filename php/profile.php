@@ -29,9 +29,10 @@
         <div id="mainContentDiv">
             <div id="avatarDiv">
                     <span>
-                        Avatar
+                        $_GET["Ten'Nin"]
                     </span>
                 <img src="../assets/images/avatar.png" alt="avatar">
+                <span>Level 1</span>
             </div>
 
             <div id="characteristicDiv">
@@ -73,15 +74,14 @@
                 </div>
 
                 <div>
-                    <span id="chanceSpan" class="characteristicSpan">Chance</span>
+                    <span id="luckSpan" class="characteristicSpan">Luck</span>
                     <span id="imageSpan">
-                            <button class="buttonPoint" id="chanceButtonPlus">
+                            <button class="buttonPoint" id="luckButtonPlus">
                             </button>
-                            <button class="buttonPoint" id="chanceButtonMinus">
+                            <button class="buttonPoint" id="luckButtonMinus">
                             </button>
                         </span>
-
-                    <span id="chancePointSpan" class="pointSpan">0</span>
+                    <span id="luckPointSpan" class="pointSpan">0</span>
                 </div>
 
                 <div>
@@ -92,25 +92,25 @@
 
             </div>
 
-            <div id="unusedPointDiv">
-                    <span class="firstSpan">
-                        Unused Stat Points
-                        <span class="secondSpan">
-                            0
-                        </span>
+            <div id="sideDiv">
+                <span class="firstSpan">
+                    Unused Stat Points
+                    <span class="secondSpan">
+                        0
                     </span>
+                </span>
                 <span class="firstSpan">
                         Experience
                         <span class="secondSpan">
                             0
                         </span>
-                    </span>
+                </span>
                 <span class="firstSpan">
                         Money
                         <span class="secondSpan">
                             0
                         </span>
-                    </span>
+                </span>
 
             </div>
         </div>

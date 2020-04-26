@@ -42,17 +42,13 @@
         <footer id="footer">
             <ul>
                 <li><a href="#">General Conditions</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Leaderboard</a></li>
+                <li><a href="php/leaderboard.php">Leaderboard</a></li>
                 <li><a href="#">The creator</a></li>
             </ul>
         </footer>
-
+        
     </section> <!-- end footer section -->
 </section> <!-- end global section -->
-
-
-
 </body>
 </html>
 

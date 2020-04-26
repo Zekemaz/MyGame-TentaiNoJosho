@@ -19,7 +19,7 @@
             <h1 id='gametitle'>Game Story</h1>
         </div>
 
-        <p>
+        <p id="gamestory_p">
             In the beginning there was only peace, that peace which
             subsisted for thousands of years among the Chikyujin.
             These people knew how to exploit the resources of their land

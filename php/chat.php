@@ -13,24 +13,26 @@
 <section id="global"> <!-- global section -->
 
     <?php include("header3.php") ?>
-
-    <section id="content_section_training"> <!-- content section -->
-
-        <div id="trainingMenuDiv">
-            <h1 id='trainingMenuTitle'>Training Dojo</h1>
-        </div>
-        <div id="explicationDiv">
-            <p>Training will grant you experience and stats points. You cannot attack while you train.</p>
+    <section id="content_section"> <!-- content section -->
+        <div id="chatTitle">
+            <h1>Chat</h1>
         </div>
 
-        <div id="trainingDiv">
-            <div id="trainBtnDiv">
-                <button>Train</button>
+        <div id="chatDiv">
+            <div id="leftDiv">
+                <div>
+                    <button>Moderator</button>
+                    <button>General Chat</button>
+                </div>
+
             </div>
-            <img id="traininglogo" src="../assets/images/toriilogo1.svg" alt="traininglogo">
-            <div id="timeDiv">
-                <span id="span1">Time left</span>
-                <span id="span2">0</span>
+            <div id="rightDiv">
+                <div id="messageArea">
+                </div>
+                <div id="btnTxtArea">
+                    <button id="sendBtn">Send</button>
+                    <textarea name="textBox" id="textArea" cols="1" rows="5"></textarea>
+                </div>
             </div>
         </div>
     </section> <!-- end content section -->
@@ -41,6 +43,4 @@
 
 </body>
 </html>
-
-
 
