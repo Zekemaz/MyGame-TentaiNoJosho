@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="" />
+    <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/characteristic.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/characteristic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/sign_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/sign_up.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/contentstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contentstyle.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +17,20 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -34,17 +54,18 @@
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/include" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/php" />
       <recent name="$PROJECT_DIR$/assets/images" />
       <recent name="$PROJECT_DIR$/assets" />
-      <recent name="$PROJECT_DIR$/styles" />
     </key>
   </component>
   <component name="RunManager">
@@ -83,6 +104,7 @@
       <workItem from="1587471775936" duration="8774000" />
       <workItem from="1587752729505" duration="5313000" />
       <workItem from="1587897730762" duration="1086000" />
+      <workItem from="1588167553536" duration="19880000" />
     </task>
     <servers />
   </component>
@@ -98,6 +120,14 @@
       <screen x="0" y="23" width="1280" height="719" />
     </state>
     <state x="305" y="23" key="#PHP/0.23.1280.719@0.23.1280.719" timestamp="1585769566956" />
+    <state x="240" y="65" key="#SQL_Dialects" timestamp="1588181858511">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="65" key="#SQL_Dialects/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588181858511" />
+    <state x="240" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588181937334">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="240" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588181937334" />
     <state x="427" y="166" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1585777705965">
       <screen x="0" y="23" width="1280" height="719" />
     </state>
@@ -158,16 +188,18 @@
       <screen x="0" y="23" width="1280" height="719" />
     </state>
     <state width="1218" height="206" key="GridCell.Tab.2.right/0.23.1280.719@0.23.1280.719" timestamp="1585776326747" />
-    <state x="458" y="313" key="NewPhpFileDialog" timestamp="1587762801154">
-      <screen x="0" y="23" width="1280" height="719" />
+    <state x="458" y="323" key="NewPhpFileDialog" timestamp="1588191817490">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="458" y="323" key="NewPhpFileDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588191817490" />
     <state x="458" y="313" key="NewPhpFileDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1587762801154" />
     <state x="1967" y="449" key="NewPhpFileDialog/0.23.1280.719/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585817954379" />
     <state x="458" y="313" key="NewPhpFileDialog/0.23.1280.719@0.23.1280.719" timestamp="1585816162014" />
     <state x="458" y="336" key="NewPhpFileDialog/0.23.1280.777/1280.23.1920.999@0.23.1280.777" timestamp="1587060596589" />
-    <state x="141" y="23" width="997" height="719" key="SettingsEditor" timestamp="1587758518493">
-      <screen x="0" y="23" width="1280" height="719" />
+    <state x="141" y="0" width="997" height="719" key="SettingsEditor" timestamp="1588173344270">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="141" y="0" key="SettingsEditor/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588173344270" />
     <state x="141" y="23" key="SettingsEditor/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1587758518493" />
     <state x="1510" y="23" key="SettingsEditor/0.23.1280.719/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585817915705" />
     <state x="141" y="23" width="997" height="719" key="SettingsEditor/0.23.1280.719@0.23.1280.719" timestamp="1586879253312" />
@@ -177,9 +209,17 @@
     <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588167578826" />
     <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1587752729202" />
     <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.719@0.23.1280.719" timestamp="1587020651233" />
+    <state x="305" y="185" key="run.anything.popup" timestamp="1588183157410">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="185" key="run.anything.popup/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588183157410" />
     <state x="317" y="48" key="scopes" timestamp="1585773737226">
       <screen x="0" y="23" width="1280" height="719" />
     </state>
     <state x="317" y="48" key="scopes/0.23.1280.719@0.23.1280.719" timestamp="1585773737226" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1588185197320">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588185197320" />
   </component>
 </project>

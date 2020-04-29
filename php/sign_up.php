@@ -1,3 +1,6 @@
+<?php
+require '../include/database_connection.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,37 +22,45 @@
         <div id="signupdiv">
             <h1 id='signpages_h1'>Sign up</h1>
         </div>
-        <form class="form1" name="form1" method="post" action="characteristic.php">
+        <form class="form1" name="form1" method="post" action="../include/registration.php">
+            <?php include('../include/errors.php'); ?>
             <div class="formDiv">
-                <div class="divLabelInput">
-                    <label class="label" for="lastname">Lastname</label><input type="text" name="lastname" id="lastname" />
-                </div>
-                <br class="clear" />
                 <div class="divLabelInput">
                     <label class="label" for="firstname">Firstname</label><input type="text" name="firstname" id="firstname" />
                 </div>
                 <br class="clear" />
                 <div class="divLabelInput">
-                    <label class="label" for="dob">Date of birth</label><input type="date" name="dob" id="firstname" />
+                    <label class="label" for="lastname">Lastname</label><input type="text" name="lastname" id="lastname" />
                 </div>
                 <br class="clear" />
                 <div class="divLabelInput">
-                    <label class="label" for="email">E-mail</label><input type="text" name="email" id="email" />
+                    <label class="label" for="username">Username</label><input type="text" name="username" id="username" value="<?php echo $username; ?>" />
                 </div>
                 <br class="clear" />
                 <div class="divLabelInput">
-                    <label class="label" for="pseudo">Pseudo</label><input type="text" name="pseudo" id="pseudo" />
+                    <label class="label" for="dob">Date of birth</label><input type="date" name="dob" id="dob" />
                 </div>
                 <br class="clear" />
                 <div class="divLabelInput">
-                    <label class="label" for="password">Password</label><input type="password" name="password" id="password" />
+                    <label class="label" for="email">E-mail</label><input type="text" name="email" id="email" value="<?php echo $email; ?>" />
+                </div>
+<!--                <br class="clear" />-->
+<!--                <div class="divLabelInput">-->
+<!--                    <label class="label" for="pseudo">Pseudo</label><input type="text" name="pseudo" id="pseudo" />-->
+<!--                </div>-->
+                <br class="clear" />
+                <div class="divLabelInput">
+                    <label class="label" for="password">Password</label><input type="password" name="password" id="password"/>
+                </div>
+                <br class="clear" />
+                <div class="divLabelInput">
+                    <label class="label" for="password2">Password verification</label><input type="password" name="password2" id="password" />
                 </div>
             </div>
             <button type="submit" name="submit" id="submit">Create account</button>
             <br class="clear" />
         </form>
     </section> <!-- end content section -->
-
 
     <?php include("footer.php") ?>
 
@@ -59,34 +70,4 @@
 
 </body>
 </html>
-
-<?php
-/* //Post Params
-$lastname = $_POST['lastname'];
-$firstname = $_POST['firstname'];
-$email = $_POST['email'];
-$pseudo = $_POST['pseudo'];
-$password = $_POST['password'];
-
-<?php //Query
-
-//INSERT
-$query = " INSERT INTO joueur ( lastname, firstname, email, pseudo, password )  VALUES ( '$lastname', '$firstname', '$email', '$pseudo', '$password' ) ";
-$result = mysql_query($query);
-
-if( $result )
-{
- echo 'Success';
-}
-else
-{
- echo 'Query Failed';
-}
-
-?>
-
-
-
-*/
-?>
 

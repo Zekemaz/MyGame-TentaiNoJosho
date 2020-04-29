@@ -196,7 +196,7 @@ transition: ease .3s;
     color: #D654B7;
     background: #FFFFFF;
 }
-/*choose faction and characteristic style*/
+/*choose class and characteristic style*/
 #formdiv_characteristic #presentation1, #presentation2
 {
     border: #D654B7 3px solid;
@@ -207,53 +207,61 @@ transition: ease .3s;
 #presentation2{
     margin-bottom: 5vh;
 }
-#faction_div
-{
-    margin: 1vh 0 6vh 0;
+#skill_div{
     display: flex;
     justify-content: space-between;
+    margin: 1vh 0 6vh 0;
+
 }
-.radioFaction
+#class_div
 {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+    display: flex;
+    flex-direction: column;
 }
-.labelFaction
+/*.radioFaction*/
+/*{*/
+/*    -moz-appearance: none;*/
+/*    -webkit-appearance: none;*/
+/*    appearance: none;*/
+/*}*/
+.labelClass
 {
-    cursor: pointer;
-    width: 40%;
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 2vh 1vw;
+    margin: 0 0 5vh 0;
+    width: 15vw;
     outline: none;
     color: #FFFFFF;
     font-size: 1.4rem;
     display: block;
-
 }
-.titleSpan
-{
-    font-size: 1.4rem;
-    padding: 5vh 1vw;
-    display: block;
-    border: #D654B7 3px solid;
-    background: #050a2f;
-    border-radius: 7px;
-}
-.spanFaction
-{
-    font-size: 1.3rem;
-}
-label input[type=radio]:checked ~ .titleSpan
-{
-    border: #ffffff 3px solid;
-}
+/*.titleSpan*/
+/*{*/
+/*    font-size: 1.4rem;*/
+/*    padding: 5vh 1vw;*/
+/*    display: block;*/
+/*    border: #D654B7 3px solid;*/
+/*    background: #050a2f;*/
+/*    border-radius: 7px;*/
+/*}*/
+/*.spanFaction*/
+/*{*/
+/*    font-size: 1.3rem;*/
+/*}*/
+/*label input[type=radio]:checked ~ .titleSpan*/
+/*{*/
+/*    border: #ffffff 3px solid;*/
+/*}*/
 /*button style*/
 #skill_div
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 .spanSkill
 {
+    margin: 0 ;
     padding: 2vh 2vw;
     text-align: center;
     font-size: 1.4rem;
@@ -308,6 +316,26 @@ label input[type=radio]:checked ~ #spanSkill_3
 {
     border: #ffffff 3px solid;
     color: #FDC236;
+}
+#characterPseudoDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#labelPseudo{
+    border: #D654B7 3px solid;
+    border-radius: 7px;
+    padding: 2vh 1vw;
+    font-size: 1.4rem;
+    margin: 3vh 0;
+}
+#inputPseudo{
+    border: #D654B7 2px solid;
+    border-radius: 2px;
+    width: 12vw;
+    font-size: 1.4rem;
+    font-family: Orbitron;
+    outline: none;
 }
 #submit_character
 {
