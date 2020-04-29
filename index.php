@@ -46,7 +46,7 @@
                 <li><a href="#">The creator</a></li>
             </ul>
         </footer>
-        
+
     </section> <!-- end footer section -->
 </section> <!-- end global section -->
 </body>
