@@ -13,7 +13,7 @@ $errors = array();
 include('../include/database_connection.php');
 
 // REGISTER USER
-if (isset($_POST['submit'])) {
+if (isset($_POST['submit_signup'])) {
     // get input values from form
     $lastname = htmlspecialchars($_POST['lastname']);
     $firstname = htmlspecialchars($_POST['firstname']);
@@ -69,6 +69,41 @@ VALUES('$lastname', '$firstname', '$username', '$date_of_birth', '$email', '$pas
         $_SESSION['success'] = "You are now logged in";
         header('location: ../php/characteristic.php');
         echo $errors;
+
+        // LOGIN USER
+if (isset($_POST['submit_signin']))
+{
+    $username = htmlspecialchars($conn, $_POST['username']);
+    $password = htmlspecialchars($conn, $_POST['password']);
+
+    if (empty($username))
+    {
+        array_push($errors, "Username is required");
+    }
+    if (empty($password))
+    {
+        array_push($errors, "Password is required");
+    }
+
+    if (count($errors) == 0)
+    {
+        $password_hash = password_hash($password, PASSWORD_DEFAULT);
+
+        $query = $conn->prepare("SELECT * FROM `user` WHERE `username`='$username' AND `password`='$password_hash'");
+        // Executing the query
+        $result = $query->execute();
+        if (mysqli_num_rows($result) == 1)
+        {
+            $_SESSION['username'] = $username;
+            $_SESSION['success'] = "You are now logged in";
+            header('location: ../php/profile.php');
+        }
+        else
+        {
+            array_push($errors, "Wrong username/password combination");
+        }
+    }
+}
         $conn = null;
     }
 }

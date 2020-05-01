@@ -1,3 +1,18 @@
+<?php
+session_start();
+$_SESSION['username'];
+
+if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: ../index.php');
+}
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: ../index.php");
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,16 +35,30 @@
             <ul id="optionNav">
                 <li class="optionLi"><a href="attackmenu.php">Attack</a> </li>
                 <li class="optionLi"><a href="leaderboard.php">Leaderboard</a></li>
-                <li class="optionLi" id="yourProfile">Your Profile</li>
+                <?php  if (isset($_SESSION['username'])) : ?>
+                    <li class="optionLi" id="yourProfile"><?php echo $_SESSION['username']; ?></li>
+                <?php endif ?>
                 <li class="optionLi"><a href="chat.php">Chat</a></li>
                 <li class="optionLi"><a href="training.php">Training</a></li>
             </ul>
         </div>
 
+
         <div id="mainContentDiv">
             <div id="avatarDiv">
                     <span>
-                        $_GET["Ten'Nin"]
+                        <?php include ('../include/database_connection.php');
+                        $username = $_SESSION['username'];
+                        $query = $conn->prepare(
+                            "SELECT pseudo
+                            FROM `character`
+                            LEFT JOIN user ON `character`.`ID_user` = `user`.`ID_user`
+                            WHERE user.username = '$username'");
+                        // Executing the query
+                        $query->execute();
+                        $pseudo = $query->fetchColumn();
+                        echo $pseudo;
+                        $conn = null; ?>
                     </span>
                 <img src="../assets/images/avatar.png" alt="avatar">
                 <span>Level 1</span>
@@ -124,5 +153,3 @@
 
 </body>
 </html>
-
-
