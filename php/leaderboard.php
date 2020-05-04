@@ -1,3 +1,7 @@
+<?php
+include('../include/database_connection.php');
+$conn = database_connection();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,15 +25,35 @@
     <div id="leaderboardTable">
         <table>
             <tr>
-                <th scope="col">Place</th>
+                <th scope="col">Rank</th>
                 <th scope="col">Pseudo</th>
-                <th scope="col">Faction</th>
+                <th scope="col">Class</th>
                 <th scope="col">Level</th>
                 <th scope="col">Experience</th>
             </tr>
-            <tr>
-                <th scope="row">1</th>
-            </tr>
+                <?php
+                $query = $conn->prepare(
+                    "SELECT `pseudo`,`class`,`level`,`experience` FROM `character` 
+                    ORDER by experience DESC, level DESC");
+                // Executing the query
+                $query->execute();
+                $rank = 1;
+                while ($row = $query->fetch())
+                {
+                    echo "
+                         <tr>
+                            <td>{$rank}</td>
+                            <td>{$row['pseudo']}</td>
+                            <td>{$row['class']}</td>
+                            <td>{$row['level']}</td>
+                            <td>{$row['experience']}</td>
+                        </tr>
+                            ";
+                $rank++;
+                }
+                $conn = null;
+                ?>
+
 <?php
 //
 //            $result = mysql_query("SELECT pseudo, faction, level, experience FROM character ORDER BY score DESC");

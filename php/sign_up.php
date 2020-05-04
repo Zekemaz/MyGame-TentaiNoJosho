@@ -1,5 +1,5 @@
 <?php
-require '../include/database_connection.php';
+include('../include/registration.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +22,7 @@ require '../include/database_connection.php';
         <div id="signupdiv">
             <h1 id='signpages_h1'>Sign up</h1>
         </div>
-        <form class="form1" name="form1" method="post" action="../include/registration.php">
+        <form class="form1" name="form1" method="post" action="sign_up.php">
             <?php include('../include/errors.php'); ?>
             <div class="formDiv">
                 <div class="divLabelInput">
@@ -57,7 +57,7 @@ require '../include/database_connection.php';
                     <label class="label" for="password2">Password verification</label><input type="password" name="password2" id="password" />
                 </div>
             </div>
-            <button type="submit" name="submit" id="submit">Create account</button>
+            <button type="submit" name="submit_signup" id="submit">Create account</button>
             <br class="clear" />
         </form>
     </section> <!-- end content section -->

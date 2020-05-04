@@ -1,3 +1,6 @@
+<?php
+include('../include/registration.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,10 +22,11 @@
         <div id="signupdiv">
             <h1 id='signpages_h1'>Sign in</h1>
         </div>
-        <form class="form1" name="form1" method="post" action="profile.php">
+        <form class="form1" name="form1" method="post" action="sign_in.php">
+            <?php include('../include/errors.php'); ?>
             <div class="formDiv">
                 <div class="divLabelInput">
-                    <label class="label" for="pseudo">Pseudo</label><input type="text" name="pseudo" id="pseudo" />
+                    <label class="label" for="username">Username</label><input type="text" name="username" id="pseudo" />
                     <br class="clear" />
                 </div>
                 <div class="divLabelInput">
@@ -30,21 +34,11 @@
                     <br class="clear" />
                 </div>
             </div>
-            <button type="submit" name="submit" id="submit_connect">Connect</button>
+            <button type="submit" name="submit_signin" id="submit_connect">Connect</button>
             <br class="clear" />
         </form>
 
     </section> <!-- end content section -->
-
-    <?php
-    /* //Post Params
-    $lastname = $_POST['lastname'];
-    $firstname = $_POST['firstname'];
-    $email = $_POST['email'];
-    $pseudo = $_POST['pseudo'];
-    $password = $_POST['password'];
-    */
-    ?>
 
     <?php include("footer.php") ?>
 

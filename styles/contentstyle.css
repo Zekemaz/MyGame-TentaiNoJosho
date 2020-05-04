@@ -1009,10 +1009,44 @@ label input[type=radio]:checked ~ #spanSkill_3
 #chatDiv #rightDiv #messageArea {
     border: #D654B7 3px solid;
     border-radius: 7px;
-    padding: 2vh 2vw;
-    background-color: #FFFFFF;
-    opacity: 60%;
+    padding: 2vh 1vw;
+    background-image: url("../assets/images/chatBackground.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     height: 70%;
+    overflow: auto;
+}
+div.message{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#messageSenderTimeDiv{
+    display: flex;
+    flex-direction: column;
+    background: #77A463;
+    border-radius: 7px;
+    margin: 1vh 3vw 0 0;
+}
+#usernameSender{
+    padding: 5px;
+}
+
+#messageP{
+    background: #77A463;
+    border-radius: 7px;
+    padding: 5px;
+    width: 75%;
+}
+
+#messageTime{
+    color: black;
+    font-size: 0.7rem;
+    border-radius: 7px;
+    padding: 5px;
+    /*margin-left: 3vw;*/
+
 }
 #chatDiv #rightDiv #btnTxtArea {
     margin: 1vh 0;
@@ -1021,9 +1055,13 @@ label input[type=radio]:checked ~ #spanSkill_3
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-#chatDiv #rightDiv #btnTxtArea #sendBtn {
+#messageForm{
+    display: flex;
+    align-items: center;
+}
+#chatDiv #rightDiv #btnTxtArea #messageForm #sendBtn {
     border: #D654B7 3px solid;
     border-radius: 7px;
     background-color: #050a2f;
@@ -1032,24 +1070,24 @@ label input[type=radio]:checked ~ #spanSkill_3
     font-size: 1rem;
     cursor: pointer;
     width: 8vw;
+    height: 5vh;
 }
-#chatDiv #rightDiv #btnTxtArea #sendBtn:hover {
+#chatDiv #rightDiv #btnTxtArea #messageForm #sendBtn:hover {
     border: #FFFFFF 3px solid;
     color: #D654B7;
     font-family: Orbitron;
     font-size: 1rem;
     cursor: pointer;
-    width: 8vw;
 }
-#chatDiv #rightDiv #btnTxtArea #sendBtn:active {
+#chatDiv #rightDiv #btnTxtArea #messageForm #sendBtn:active {
     border: #FFFFFF 3px solid;
     background-color: #FFFFFF;
     color: #D654B7;
     font-family: Orbitron;
     font-size: 1rem;
     cursor: pointer;
-    width: 8vw;
 }
-#chatDiv #rightDiv #btnTxtArea #textArea {
+#chatDiv #rightDiv #btnTxtArea #messageForm #textArea {
     width: 40vw;
+    resize: none;
 }

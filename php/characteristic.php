@@ -1,3 +1,17 @@
+<?php
+session_start();
+$_SESSION['username'];
+
+if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: sign_in.php');
+}
+if (isset($_GET['logout'])) {
+    session_destroy();
+    unset($_SESSION['username']);
+    header("location: sign_in.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +33,7 @@
         <div id="divWelcome">
             <h1 id='welcomePseudo'>Welcome Pseudo</h1>
         </div>
-        <form id="form_characteristic" name="form1" method="post" action="profile.php">
+        <form id="form_characteristic" name="form1" method="post" action="../include/characterInsert.php">
             <?php include('../include/errors.php'); ?>
             <div id="formdiv_characteristic">
 
@@ -71,7 +85,7 @@
                     <div id="class_div">
                         <label id="label1" class="labelClass">If you choose Strength you will be part of the class of the Sento-in</label>
                         <label class="labelSkill" for="strength" id="skill_0">
-                            <input class="radioSkill" type="radio" name="skill[]" value="Strength" id="strength"/>
+                            <input class="radioSkill" type="radio" name="skill" value="Strength" id="strength"/>
                             <span class="spanSkill" id="spanSkill_0"><strong>Strength</strong></span>
                         </label>
                     </div>
@@ -79,7 +93,7 @@
                     <div id="class_div">
                         <label class="labelSkill" for="intelligence" id="skill_1">
                             <label id="label2" class="labelClass">If you choose Intelligence you will be part of the class of the Konjura</label>
-                            <input class="radioSkill" type="radio" name="skill[]" value="Intelligence" id="intelligence"/>
+                            <input class="radioSkill" type="radio" name="skill" value="Intelligence" id="intelligence"/>
                             <span class="spanSkill" id="spanSkill_1"><strong>Intelligence</strong></span>
                         </label>
                     </div>
@@ -87,7 +101,7 @@
                     <div id="class_div">
                         <label class="labelSkill" for="agility" id="skill_2">
                             <label id="label3" class="labelClass">If you choose Agility you will be part of the class of the Horo-sha</label>
-                            <input class="radioSkill" type="radio" name="skill[]" value="Agility" id="agility"/>
+                            <input class="radioSkill" type="radio" name="skill" value="Agility" id="agility"/>
                             <span class="spanSkill" id="spanSkill_2"><strong>Agility</strong></span>
                         </label>
                     </div>
@@ -115,34 +129,3 @@
 
 </body>
 </html>
-
-<?php
-/* //Post Params
-$lastname = $_POST['lastname'];
-$firstname = $_POST['firstname'];
-$email = $_POST['email'];
-$pseudo = $_POST['pseudo'];
-$password = $_POST['password'];
-
-<?php //Query
-
-//INSERT
-$query = " INSERT INTO joueur ( lastname, firstname, email, pseudo, password )  VALUES ( '$lastname', '$firstname', '$email', '$pseudo', '$password' ) ";
-$result = mysql_query($query);
-
-if( $result )
-{
- echo 'Success';
-}
-else
-{
- echo 'Query Failed';
-}
-
-?>
-
-
-
-*/
-?>
-

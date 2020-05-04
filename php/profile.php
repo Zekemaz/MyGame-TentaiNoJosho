@@ -1,6 +1,5 @@
 <?php
 session_start();
-$_SESSION['username'];
 
 if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
@@ -11,6 +10,8 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: ../index.php");
 }
+include('../include/database_connection.php');
+//database_connection();
 
 ?>
 <!DOCTYPE html>
@@ -47,7 +48,7 @@ if (isset($_GET['logout'])) {
         <div id="mainContentDiv">
             <div id="avatarDiv">
                     <span>
-                        <?php include ('../include/database_connection.php');
+                        <?php
                         $username = $_SESSION['username'];
                         $query = $conn->prepare(
                             "SELECT pseudo
