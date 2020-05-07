@@ -1,6 +1,10 @@
 <?php
-session_start();
-$_SESSION['username'];
+if (session_status() !== PHP_SESSION_ACTIVE) {
+    session_start();
+}
+//if (session_status() == PHP_SESSION_NONE) {
+//    session_start();
+//}
 // Connect to database
 require_once('../include/function.php');
 $conn = dbConnection();
@@ -95,7 +99,7 @@ VALUES(:pseudo, :class, :level, :experience, :money, :strength, :intelligence, :
         $_SESSION['pseudo'] = $pseudo;
         header('location: ../php/profile.php');
 
-        $conn = null;
     }
 }
+$conn = null;
 ?>

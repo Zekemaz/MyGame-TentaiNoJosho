@@ -6,11 +6,11 @@ if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
     header('location: sign_in.php');
 }
-if (isset($_GET['logout'])) {
-    session_destroy();
-    unset($_SESSION['username']);
-    header("location: sign_in.php");
-}
+//if (isset($_GET['logout'])) {
+//    session_destroy();
+//    unset($_SESSION['username']);
+//    header("location: sign_in.php");
+//}
 ?>
 <!DOCTYPE html>
 <html lang="en">

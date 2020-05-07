@@ -1,11 +1,12 @@
 <?php
-// Connect to database
+// Require files
 require_once '../include/function.php';
 require_once '../include/class/user.php';
+// connexion to database
 $conn = dbConnection();
 
 
-// initializing variables
+// Initializing variables
 $lastname = "";
 $firstname = "";
 $username = "";
@@ -66,11 +67,10 @@ if (isset($_POST['submit_signup'])) {
         VALUES('$lastname', '$firstname', '$username', '$date_of_birth', '$email', '$password_hash')");
         // Executing the query
         $query->execute();
+
         session_start();
         $_SESSION['username'] = $username;
         header('location: ../php/characteristic.php');
-
-
     }
 
 }
