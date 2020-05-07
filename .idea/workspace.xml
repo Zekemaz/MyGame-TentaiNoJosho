@@ -2,21 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/include/function.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/project_brief/cahier_des_charges_Gabriel_DS.docx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/project_brief/cahier_des_charges_Gabriel_DS.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/project_brief/~$hier_des_charges_Gabriel_DS.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/characterInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/characterInsert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/database_connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/database_connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/characterInsert.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/character_insert.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/database_connection.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/errors.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/errors.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/characteristic.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/characteristic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/chat.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/chat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/header3.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header3.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/leaderboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/leaderboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/sign_in.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/sign_in.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/sign_up.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/sign_up.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/contentstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/contentstyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +115,7 @@
       <workItem from="1588286287510" duration="25000" />
       <workItem from="1588333768969" duration="6218000" />
       <workItem from="1588588827184" duration="20564000" />
+      <workItem from="1588857230914" duration="13910000" />
     </task>
     <servers />
   </component>
@@ -205,10 +203,10 @@
       <screen x="0" y="23" width="1280" height="719" />
     </state>
     <state width="1218" height="206" key="GridCell.Tab.2.right/0.23.1280.719@0.23.1280.719" timestamp="1585776326747" />
-    <state x="458" y="323" key="NewPhpFileDialog" timestamp="1588590451767">
+    <state x="458" y="323" key="NewPhpFileDialog" timestamp="1588864578746">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="458" y="323" key="NewPhpFileDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588590451767" />
+    <state x="458" y="323" key="NewPhpFileDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588864578746" />
     <state x="458" y="313" key="NewPhpFileDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1588284622852" />
     <state x="1967" y="449" key="NewPhpFileDialog/0.23.1280.719/1280.23.1920.1057@1280.23.1920.1057" timestamp="1585817954379" />
     <state x="458" y="313" key="NewPhpFileDialog/0.23.1280.719@0.23.1280.719" timestamp="1585816162014" />
@@ -226,6 +224,10 @@
     <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588167578826" />
     <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1588286290497" />
     <state x="317" y="215" key="com.intellij.ide.util.TipDialog/0.23.1280.719@0.23.1280.719" timestamp="1587020651233" />
+    <state x="365" y="34" key="refactoring.ChangeSignatureDialog" timestamp="1588866988284">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="365" y="34" key="refactoring.ChangeSignatureDialog/0.0.1280.800/1280.0.1920.1080@0.0.1280.800" timestamp="1588866988284" />
     <state x="305" y="185" key="run.anything.popup" timestamp="1588183157410">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

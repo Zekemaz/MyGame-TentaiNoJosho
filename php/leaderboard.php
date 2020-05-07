@@ -1,6 +1,6 @@
 <?php
-include('../include/database_connection.php');
-$conn = database_connection();
+require_once('../include/function.php');
+$conn = dbConnection();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,50 +30,12 @@ $conn = database_connection();
                 <th scope="col">Class</th>
                 <th scope="col">Level</th>
                 <th scope="col">Experience</th>
+                <th scope="col">Wisdom Streak</th>
             </tr>
                 <?php
-                $query = $conn->prepare(
-                    "SELECT `pseudo`,`class`,`level`,`experience` FROM `character` 
-                    ORDER by experience DESC, level DESC");
-                // Executing the query
-                $query->execute();
-                $rank = 1;
-                while ($row = $query->fetch())
-                {
-                    echo "
-                         <tr>
-                            <td>{$rank}</td>
-                            <td>{$row['pseudo']}</td>
-                            <td>{$row['class']}</td>
-                            <td>{$row['level']}</td>
-                            <td>{$row['experience']}</td>
-                        </tr>
-                            ";
-                $rank++;
-                }
-                $conn = null;
+                    echo showLeaderboard();
                 ?>
-
-<?php
-//
-//            $result = mysql_query("SELECT pseudo, faction, level, experience FROM character ORDER BY score DESC");
-//            $rank = 1;
-//
-//            if (mysql_num_rows($result)) {
-//                while ($row = mysql_fetch_assoc($result)) {
-//                    echo "<td>{$rank}</td>
-//                      <td>{$row['pseudo']}</td>
-//                      <td>{$row['faction']}</td>";
-//                    <td>{$row['level']}</td>";
-//                      <td>{$row['Experience']}</td>";
-//
-//                $rank++;
-//            }
-//            }
-//            ?>
         </table>
-
-
     </div>
 </section> <!-- end content section -->
     <?php include("footer.php") ?>
@@ -84,3 +46,6 @@ $conn = database_connection();
 </body>
 </html>
 
+<?php
+$conn = null;
+?>

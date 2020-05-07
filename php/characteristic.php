@@ -33,7 +33,7 @@ if (isset($_GET['logout'])) {
         <div id="divWelcome">
             <h1 id='welcomePseudo'>Welcome Pseudo</h1>
         </div>
-        <form id="form_characteristic" name="form1" method="post" action="../include/characterInsert.php">
+        <form id="form_characteristic" name="form1" method="post" action="../include/character_insert.php">
             <?php include('../include/errors.php'); ?>
             <div id="formdiv_characteristic">
 

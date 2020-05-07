@@ -10,8 +10,8 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: ../index.php");
 }
-include ('../include/database_connection.php');
-//include ('../include/message.php');
+include('../include/function.php');
+$conn = dbConnection();
 
 ?>
 <!DOCTYPE html>
@@ -91,8 +91,8 @@ include ('../include/database_connection.php');
                 <div id="btnTxtArea">
                     <form id="messageForm" name="formChat" method="post" action="../include/message.php">
                         <button id="sendBtn">Send</button>
-                        <input type="text" name="message" id="textArea" autocomplete="off" autofocus placeholder="Type your message...">
-<!--                        <textarea name="message" id="textArea" cols="1" rows="5" placeholder="Type your message..."></textarea>-->
+<!--                        <input type="text" name="message" id="textArea" autocomplete="off" autofocus placeholder="Type your message...">-->
+                        <textarea name="message" id="textArea" cols="1" rows="5" autocomplete="off" autofocus placeholder="Type your message..."></textarea>
                     </form>
                 </div>
             </div>

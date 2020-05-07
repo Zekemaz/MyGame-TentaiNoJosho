@@ -10,8 +10,35 @@ if (isset($_GET['logout'])) {
     unset($_SESSION['username']);
     header("location: ../index.php");
 }
-include('../include/database_connection.php');
-//database_connection();
+require_once('../include/function.php');
+$conn = dbConnection();
+
+////////////////////////// Query for Stats //////////////////////////////
+$username = $_SESSION['username'];
+
+// Preparing the SQL query
+$query = $conn->prepare(
+    " SELECT pseudo, level, strength, intelligence, agility, chance, 
+                        wisdom, unused_statspoint, experience, money
+                FROM `character`
+                LEFT JOIN user ON `character`.`ID_user` = `user`.`ID_user`
+                WHERE user.username = '$username'");
+// Executing the query
+$query->execute();
+while ($row = $query->fetch()) {
+    $pseudo = $row['pseudo'];
+    $level = $row['level'];
+    $strength = $row['strength'];
+    $intelligence = $row['intelligence'];
+    $agility = $row['agility'];
+    $chance = $row['chance'];
+    $wisdom = $row['wisdom'];
+    $unused_statspoint = $row['unused_statspoint'];
+    $experience = $row['experience'];
+    $money = $row['money'];
+}
+
+$conn = null;
 
 ?>
 <!DOCTYPE html>
@@ -49,22 +76,16 @@ include('../include/database_connection.php');
             <div id="avatarDiv">
                     <span>
                         <?php
-                        $username = $_SESSION['username'];
-                        $query = $conn->prepare(
-                            "SELECT pseudo
-                            FROM `character`
-                            LEFT JOIN user ON `character`.`ID_user` = `user`.`ID_user`
-                            WHERE user.username = '$username'");
-                        // Executing the query
-                        $query->execute();
-                        $pseudo = $query->fetchColumn();
                         echo $pseudo;
-                        $conn = null; ?>
+                        ?>
                     </span>
                 <img src="../assets/images/avatar.png" alt="avatar">
-                <span>Level 1</span>
+                <span>
+                    <?php
+                    echo 'Level '.$level;
+                     ?>
+                </span>
             </div>
-
             <div id="characteristicDiv">
                 <div>
                     <span id="strengthSpan" class="characteristicSpan">Strength</span>
@@ -75,7 +96,12 @@ include('../include/database_connection.php');
                             </button>
                         </span>
 
-                    <span id="strengthPointSpan" class="pointSpan">0</span>
+                    <span id="strengthPointSpan" class="pointSpan">
+                        <?php
+
+                        echo "$strength"
+                        ?>
+                    </span>
                 </div>
 
                 <div>
@@ -87,7 +113,7 @@ include('../include/database_connection.php');
                             </button>
                         </span>
 
-                    <span id="intelligencePointSpan" class="pointSpan">0</span>
+                    <span id="intelligencePointSpan" class="pointSpan"><?php echo "$intelligence"?></span>
                 </div>
 
                 <div>
@@ -100,7 +126,7 @@ include('../include/database_connection.php');
                             </button>
                         </span>
 
-                    <span id="agilityPointSpan" class="pointSpan">0</span>
+                    <span id="agilityPointSpan" class="pointSpan"><?php echo "$agility"?></span>
                 </div>
 
                 <div>
@@ -111,12 +137,12 @@ include('../include/database_connection.php');
                             <button class="buttonPoint" id="luckButtonMinus">
                             </button>
                         </span>
-                    <span id="luckPointSpan" class="pointSpan">0</span>
+                    <span id="luckPointSpan" class="pointSpan"><?php echo "$chance"?></span>
                 </div>
 
                 <div>
                     <span id="wisdomSpan" class="characteristicSpan">Wisdom</span>
-                    <span id="wisdomPointSpan" class="pointSpan">0</span>
+                    <span id="wisdomPointSpan" class="pointSpan"><?php echo "$wisdom"?></span>
                 </div>
 
 
@@ -126,19 +152,19 @@ include('../include/database_connection.php');
                 <span class="firstSpan">
                     Unused Stat Points
                     <span class="secondSpan">
-                        0
+                        <?php echo "$unused_statspoint"?>
                     </span>
                 </span>
                 <span class="firstSpan">
                         Experience
                         <span class="secondSpan">
-                            0
+                        <?php echo "$experience"?>
                         </span>
                 </span>
                 <span class="firstSpan">
                         Money
                         <span class="secondSpan">
-                            0
+                        <?php echo "$money"?>
                         </span>
                 </span>
 

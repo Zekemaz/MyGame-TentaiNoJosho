@@ -1,7 +1,9 @@
 <?php
 // Connect to database
-include('../include/database_connection.php');
-//database_connection();
+require_once '../include/function.php';
+require_once '../include/class/user.php';
+$conn = dbConnection();
+
 
 // initializing variables
 $lastname = "";
@@ -64,11 +66,8 @@ if (isset($_POST['submit_signup'])) {
         VALUES('$lastname', '$firstname', '$username', '$date_of_birth', '$email', '$password_hash')");
         // Executing the query
         $query->execute();
-
         session_start();
         $_SESSION['username'] = $username;
-        $_SESSION['success'] = "You are now logged in";
-//        $_SESSION['pseudo'] = 'here is your pseudo';
         header('location: ../php/characteristic.php');
 
 
@@ -115,9 +114,7 @@ if (isset($_POST['submit_signin']))
             if ($query->rowCount() == 1)
             {
                 session_start();
-//                $_SESSION['pseudo'] = $pseudo;
                 $_SESSION['username'] = $username;
-                $_SESSION['success'] = "You are now logged in";
                 header('location: ../php/profile.php');
             }
         }

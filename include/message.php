@@ -11,13 +11,20 @@ if (isset($_GET['logout'])) {
     header("location: ../index.php");
 }
 // Connect to database
-include('../include/database_connection.php');
-//database_connection();
+include('../include/function.php');
+$conn = dbConnection();
 
 
 
-$message = isset($_POST['message']) ? $_POST['message'] : null;
-$username = $_SESSION['username'];
+//$message = isset($_POST['message']) ? $_POST['message'] : null;
+
+if (isset($_POST['message']) ? $_POST['message'] : null) {
+    // get input values from form
+    $message = htmlentities($_POST['message']);
+    $username = htmlentities($_SESSION['username']);
+
+
+}
 //$result = array();
 
 $queryID_user = $conn->prepare(
@@ -33,8 +40,11 @@ if(!empty($message))
 {
     $queryMessage = $conn->prepare(
         " INSERT INTO `message`(`message_content`, `ID_user`) 
-                    VALUES ('$message',$ID_user)");
-    $queryMessage->execute();
+                    VALUES (:message, :id)");
+    $queryMessage->execute(array(
+        'message'=>$message,
+        'id'=>$ID_user
+        ));
 }
 
 

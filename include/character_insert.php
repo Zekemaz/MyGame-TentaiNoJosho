@@ -1,5 +1,9 @@
 <?php
 session_start();
+$_SESSION['username'];
+// Connect to database
+require_once('../include/function.php');
+$conn = dbConnection();
 
 // initializing variables
 $pseudo = "";
@@ -16,8 +20,6 @@ $agility = 0;
 $unused_statspoint = "";
 $errors = array();
 
-// Connect to database
-include('../include/database_connection.php');
 
 // REGISTER USER
 if (isset($_POST['submit'])) {

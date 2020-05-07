@@ -1,0 +1,18 @@
+AuthName "Protected admin page"
+AuthType Basic
+AuthUserFile "pathtofile/admin/.htpasswd"
+Require valid-user
+
+
+
+        Envoyez ce fichier sur votre serveur avec votre logiciel FTP, et placez-le dans le dossier que vous voulez protéger.
+
+        Ouvrez votre navigateur et allez voir ce fichier PHP. Il vous donne le path absolu, par exemple dans mon cas :
+
+/home/site/www/admin/path.php
+
+        Copiez ce path dans votre.htaccess, et remplacez le path.php par.htpasswd, ce qui nous donne au final par exemple :
+
+/home/site/www/admin/.htpasswd
+
+    Supprimez le fichier path.php de votre serveur, il ne nous sert plus à rien maintenant qu'il nous a donné le path absolu.
