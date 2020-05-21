@@ -25,7 +25,8 @@
 
         <div id="trainingDiv">
             <div id="trainBtnDiv">
-                <button>Train</button>
+                <button id="btnTrain">Train</button>
+                <button id="btnTrain">Stop</button>
             </div>
             <img id="traininglogo" src="../assets/images/toriilogo1.svg" alt="traininglogo">
             <div id="timeDiv">
@@ -38,7 +39,7 @@
 </section> <!-- end global section -->
 
 
-
+<script src="../js/script.js"></script>
 </body>
 </html>
 

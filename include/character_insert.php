@@ -2,9 +2,6 @@
 if (session_status() !== PHP_SESSION_ACTIVE) {
     session_start();
 }
-//if (session_status() == PHP_SESSION_NONE) {
-//    session_start();
-//}
 // Connect to database
 require_once('../include/function.php');
 $conn = dbConnection();
@@ -30,6 +27,7 @@ if (isset($_POST['submit'])) {
     // get input values from form
     $pseudo = htmlspecialchars($_POST['inputPseudo']);
     $radioSkillValue = htmlspecialchars($_POST['skill']);
+    // check the class the user chose and assign the value to the character's variables with if statement.
     if($radioSkillValue == "Strength"){
         $class = 'Sento-in';
         $strength = 5;
@@ -83,6 +81,7 @@ if (isset($_POST['submit'])) {
         $query = $conn->prepare("INSERT INTO `character`(`pseudo`, `class`, `level`, `experience`, `money`, `strength`, `intelligence`, `agility`, `unused_statspoint`, `ID_user`, `ID_skin`)
 VALUES(:pseudo, :class, :level, :experience, :money, :strength, :intelligence, :agility, :unused_statspoint, :ID_user, :ID_skin)");
 
+        // assigning values to variables
         $query->execute(array(
            'pseudo'=>$pseudo,
             'class'=>$class,
@@ -96,10 +95,13 @@ VALUES(:pseudo, :class, :level, :experience, :money, :strength, :intelligence, :
             'ID_user'=> $ID_user,
             'ID_skin'=> 1
         ));
+        // assigning pseudo to session
         $_SESSION['pseudo'] = $pseudo;
+        // redirection to profile
         header('location: ../php/profile.php');
 
     }
 }
+// close the connection
 $conn = null;
 ?>

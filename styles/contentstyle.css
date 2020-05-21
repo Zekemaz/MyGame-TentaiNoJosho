@@ -877,6 +877,10 @@ label input[type=radio]:checked ~ #spanSkill_3
     width: 35%;
     opacity: 50%;
 }
+#trainBtnDiv{
+    display: flex;
+    flex-direction: column;
+}
 #trainingDiv #trainBtnDiv button {
     border: #D654B7 3px solid;
     border-radius: 7px;
@@ -886,6 +890,7 @@ label input[type=radio]:checked ~ #spanSkill_3
     font-family: Orbitron;
     font-size: 1.2rem;
     cursor: pointer;
+    margin: .4rem;
 }
 #trainingDiv #trainBtnDiv :hover {
     border: #FFFFFF 3px solid;

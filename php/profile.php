@@ -12,34 +12,11 @@ if (!isset($_SESSION['username'])) {
 //}
 require_once('../include/function.php');
 $conn = dbConnection();
+require_once('../include/class/character.php');
+$character = new Character;
 
-////////////////////////// Query for Stats //////////////////////////////
 $username = $_SESSION['username'];
-
-// Preparing the SQL query
-$query = $conn->prepare(
-    " SELECT pseudo, level, strength, intelligence, agility, chance, 
-                        wisdom, unused_statspoint, experience, money
-                FROM `character`
-                LEFT JOIN user ON `character`.`ID_user` = `user`.`ID_user`
-                WHERE user.username = '$username'");
-// Executing the query
-$query->execute();
-while ($row = $query->fetch()) {
-    $pseudo = $row['pseudo'];
-    $level = $row['level'];
-    $strength = $row['strength'];
-    $intelligence = $row['intelligence'];
-    $agility = $row['agility'];
-    $chance = $row['chance'];
-    $wisdom = $row['wisdom'];
-    $unused_statspoint = $row['unused_statspoint'];
-    $experience = $row['experience'];
-    $money = $row['money'];
-}
-
-$conn = null;
-
+$character->fetchStats();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -76,13 +53,13 @@ $conn = null;
             <div id="avatarDiv">
                     <span>
                         <?php
-                        echo $pseudo;
+                        $character->showPseudo();
                         ?>
                     </span>
                 <img src="../assets/images/avatar.png" alt="avatar">
                 <span>
                     <?php
-                    echo 'Level '.$level;
+                    $character->showLevel();
                      ?>
                 </span>
             </div>
@@ -98,8 +75,7 @@ $conn = null;
 
                     <span id="strengthPointSpan" class="pointSpan">
                         <?php
-
-                        echo "$strength"
+                        $character->showStrength();
                         ?>
                     </span>
                 </div>
@@ -113,7 +89,11 @@ $conn = null;
                             </button>
                         </span>
 
-                    <span id="intelligencePointSpan" class="pointSpan"><?php echo "$intelligence"?></span>
+                    <span id="intelligencePointSpan" class="pointSpan">
+                        <?php
+                        $character->showIntelligence();
+                        ?>
+                    </span>
                 </div>
 
                 <div>
@@ -126,7 +106,11 @@ $conn = null;
                             </button>
                         </span>
 
-                    <span id="agilityPointSpan" class="pointSpan"><?php echo "$agility"?></span>
+                    <span id="agilityPointSpan" class="pointSpan">
+                        <?php
+                        $character->showAgility();
+                        ?>
+                    </span>
                 </div>
 
                 <div>
@@ -137,12 +121,20 @@ $conn = null;
                             <button class="buttonPoint" id="luckButtonMinus">
                             </button>
                         </span>
-                    <span id="luckPointSpan" class="pointSpan"><?php echo "$chance"?></span>
+                    <span id="luckPointSpan" class="pointSpan">
+                        <?php
+                        $character->showChance();
+                        ?>
+                    </span>
                 </div>
 
                 <div>
                     <span id="wisdomSpan" class="characteristicSpan">Wisdom</span>
-                    <span id="wisdomPointSpan" class="pointSpan"><?php echo "$wisdom"?></span>
+                    <span id="wisdomPointSpan" class="pointSpan">
+                        <?php
+                        $character->showWisdom();
+                        ?>
+                    </span>
                 </div>
 
 
@@ -152,19 +144,25 @@ $conn = null;
                 <span class="firstSpan">
                     Unused Stat Points
                     <span class="secondSpan">
-                        <?php echo "$unused_statspoint"?>
+                        <?php
+                        $character->showUnusedStatsPoint();
+                        ?>
                     </span>
                 </span>
                 <span class="firstSpan">
                         Experience
                         <span class="secondSpan">
-                        <?php echo "$experience"?>
+                        <?php
+                        $character->showExperience();
+                        ?>
                         </span>
                 </span>
                 <span class="firstSpan">
                         Money
                         <span class="secondSpan">
-                        <?php echo "$money"?>
+                        <?php
+                        $character->showMoney();
+                        ?>
                         </span>
                 </span>
 
@@ -180,3 +178,7 @@ $conn = null;
 
 </body>
 </html>
+
+<?php
+$conn = null;
+?>
