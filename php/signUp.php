@@ -22,7 +22,7 @@ include('../include/registration.php');
         <div id="signupdiv">
             <h1 id='signpages_h1'>Sign up</h1>
         </div>
-        <form class="form1" name="form1" method="post" action="sign_up.php">
+        <form class="form1" name="form1" method="post" action="signUp.php">
             <?php include('../include/errors.php'); ?>
             <div class="formDiv">
                 <div class="divLabelInput">

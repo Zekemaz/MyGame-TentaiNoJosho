@@ -39,7 +39,7 @@
     </div>
 
     <div id="fourthDiv">
-        <a href="attackmenu.php">Attack Again</a>
+        <a href="attackMenu.php">Attack Again</a>
     </div>
 
 

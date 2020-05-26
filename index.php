@@ -19,8 +19,8 @@
             <nav id="nav">
                 <div id="logodiv"><a href="index.php"><img id="logoimg" src="assets/images/ninjalogo.svg" alt="ninjalogo"></a></div>
                 <ul id="ulnav">
-                    <li><a href="php/sign_up.php">Sign up</a></li>
-                    <li><a href="php/sign_in.php">Sign in</a></li>
+                    <li><a href="php/signUp.php">Sign up</a></li>
+                    <li><a href="php/signIn.php">Sign in</a></li>
                 </ul>
             </nav>
         </header>
@@ -32,7 +32,7 @@
             <h1 id='gametitle'>Tentai no Josho</h1>
         </div>
         <div id="h3div">
-            <h3 id="gamestory"><a href="php/gamestory.php">Game Story</a></h3>
+            <h3 id="gamestory"><a href="php/gameStory.php">Game Story</a></h3>
         </div>
     </section> <!-- end content section -->
 

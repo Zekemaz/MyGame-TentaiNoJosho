@@ -24,7 +24,7 @@ $conn = dbConnection();
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../styles/contentstyle.css">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="../js/trainingScript.js"></script>
 </head>
 <body>
 <section id="global"> <!-- global section -->

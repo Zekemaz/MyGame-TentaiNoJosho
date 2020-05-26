@@ -10,7 +10,7 @@
             </div>
             <ul id="ulnavStyle3">
                 <li><a href="profile.php">My profile</a></li>
-                <li><a href="../include/log_off.php">Sign off</a></li>
+                <li><a href="../include/logOff.php">Sign off</a></li>
             </ul>
         </nav>
     </header>

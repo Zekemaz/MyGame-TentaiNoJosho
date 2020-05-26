@@ -25,6 +25,15 @@ class Character
     {
 
     }
+    public function winExperience()
+    {
+        $experienceWon = 0;
+        $newExperience = $this->_experience + $experienceWon;
+    }
+    public function levelUp()
+    {
+
+    }
     public function showPseudo()
     {
         global $conn;
@@ -126,6 +135,25 @@ class Character
         echo $this->_money;
     }
 
+    public function upStrength()
+    {
+        if ($this->_unused_statspoint < 0)
+        {
+            global $conn;
+            $username = $_SESSION['username'];
+
+            // Preparing the SQL query
+            $query = $conn->prepare(
+                 "UPDATE `character`
+                            SET `strength`= $this->_strength + 1 ,`unused_statspoint`= $this->_unused_statspoint - 1
+                            WHERE `ID_character`= $username");
+            // Executing the query
+            $query->execute();
+        }
+        else if ($this->_unused_statspoint == 0)
+           echo "<script>alert('You do not have enough unused points to increase your strength')</script>";
+
+    }
     protected function LoseMoney()
     {
 

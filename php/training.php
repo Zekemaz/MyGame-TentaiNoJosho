@@ -1,3 +1,17 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    $_SESSION['msg'] = "You must log in first";
+    header('location: ../index.php');
+}
+require_once('../include/function.php');
+$conn = dbConnection();
+require_once('../include/class/character.php');
+$character = new Character;
+
+$username = $_SESSION['username'];
+$character->fetchStats();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,9 +38,10 @@
         </div>
 
         <div id="trainingDiv">
+
             <div id="trainBtnDiv">
-                <button id="btnTrain">Train</button>
-                <button id="btnTrain">Stop</button>
+                <button id="btnTrain" onclick="myTimerObj.start()">Train</button>
+                <button id="btnStop" onclick="myTimerObj.end()">Stop</button>
             </div>
             <img id="traininglogo" src="../assets/images/toriilogo1.svg" alt="traininglogo">
             <div id="timeDiv">
@@ -39,7 +54,7 @@
 </section> <!-- end global section -->
 
 
-<script src="../js/script.js"></script>
+<script src="../js/trainingScript.js"></script>
 </body>
 </html>
 

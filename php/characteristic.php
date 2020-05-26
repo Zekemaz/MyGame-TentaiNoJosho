@@ -4,12 +4,12 @@ $_SESSION['username'];
 
 if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
-    header('location: sign_in.php');
+    header('location: signIn.php');
 }
 //if (isset($_GET['logout'])) {
 //    session_destroy();
 //    unset($_SESSION['username']);
-//    header("location: sign_in.php");
+//    header("location: signIn.php");
 //}
 ?>
 <!DOCTYPE html>
@@ -33,7 +33,7 @@ if (!isset($_SESSION['username'])) {
         <div id="divWelcome">
             <h1 id='welcomePseudo'>Welcome Pseudo</h1>
         </div>
-        <form id="form_characteristic" name="form1" method="post" action="../include/character_insert.php">
+        <form id="form_characteristic" name="form1" method="post" action="../include/characterInsert.php">
             <?php include('../include/errors.php'); ?>
             <div id="formdiv_characteristic">
 
