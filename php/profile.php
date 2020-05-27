@@ -5,18 +5,14 @@ if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
     header('location: ../index.php');
 }
-//if (isset($_GET['logout'])) {
-//    session_destroy();
-//    unset($_SESSION['username']);
-//    header("location: ../index.php");
-//}
 require_once('../include/function.php');
 $conn = dbConnection();
-require_once('../include/class/character.php');
-$character = new Character;
+require_once('../include/class/Character.php');
 
 $username = $_SESSION['username'];
-$character->fetchStats();
+$Character = new Character($username);
+
+$Character->fetchStats();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,13 +50,13 @@ $character->fetchStats();
             <div id="avatarDiv">
                     <span>
                         <?php
-                        $character->showPseudo();
+                        echo $Character->getPseudo();
                         ?>
                     </span>
                 <img src="../assets/images/avatar.png" alt="avatar">
                 <span>
                     <?php
-                    $character->showLevel();
+                    echo $Character->getLevel();
                      ?>
                 </span>
             </div>
@@ -70,13 +66,11 @@ $character->fetchStats();
                     <span id="imageSpan">
                             <button class="buttonPoint" id="strengthButtonPlus">
                             </button>
-                            <button class="buttonPoint" id="strengthButtonMinus">
-                            </button>
                         </span>
 
                     <span id="strengthPointSpan" class="pointSpan">
                         <?php
-                        $character->showStrength();
+                        echo $Character->getStrength();
                         ?>
                     </span>
                 </div>
@@ -86,13 +80,11 @@ $character->fetchStats();
                     <span id="imageSpan">
                             <button class="buttonPoint" id="intelligenceButtonPlus">
                             </button>
-                            <button class="buttonPoint" id="intelligenceButtonMinus">
-                            </button>
                         </span>
 
                     <span id="intelligencePointSpan" class="pointSpan">
                         <?php
-                        $character->showIntelligence();
+                        echo $Character->getIntelligence();
                         ?>
                     </span>
                 </div>
@@ -101,15 +93,12 @@ $character->fetchStats();
                     <span id="agilitySpan" class="characteristicSpan">Agility</span>
                     <span id="imageSpan">
                             <button class="buttonPoint" id="agilityButtonPlus">
-                                <!-- <img id="agilityImgPlus" src="agilityplus.svg" alt="plus"> -->
-                            </button>
-                            <button class="buttonPoint" id="agilityButtonMinus">
                             </button>
                         </span>
 
                     <span id="agilityPointSpan" class="pointSpan">
                         <?php
-                        $character->showAgility();
+                        echo $Character->getAgility();
                         ?>
                     </span>
                 </div>
@@ -119,12 +108,10 @@ $character->fetchStats();
                     <span id="imageSpan">
                             <button class="buttonPoint" id="luckButtonPlus">
                             </button>
-                            <button class="buttonPoint" id="luckButtonMinus">
-                            </button>
                         </span>
                     <span id="luckPointSpan" class="pointSpan">
                         <?php
-                        $character->showChance();
+                        echo $Character->getLuck();
                         ?>
                     </span>
                 </div>
@@ -133,7 +120,7 @@ $character->fetchStats();
                     <span id="wisdomSpan" class="characteristicSpan">Wisdom</span>
                     <span id="wisdomPointSpan" class="pointSpan">
                         <?php
-                        $character->showWisdom();
+                        echo $Character->getWisdom();
                         ?>
                     </span>
                 </div>
@@ -144,9 +131,9 @@ $character->fetchStats();
             <div id="sideDiv">
                 <span class="firstSpan">
                     Unused Stat Points
-                    <span class="secondSpan">
+                    <span class="secondSpan" id="unused_statspoint">
                         <?php
-                        $character->showUnusedStatsPoint();
+                        echo $Character->getUnusedStatspoint();
                         ?>
                     </span>
                 </span>
@@ -154,7 +141,7 @@ $character->fetchStats();
                         Experience
                         <span class="secondSpan">
                         <?php
-                        $character->showExperience();
+                        echo $Character->getExperience();
                         ?>
                         </span>
                 </span>
@@ -162,7 +149,7 @@ $character->fetchStats();
                         Money
                         <span class="secondSpan">
                         <?php
-                        $character->showMoney();
+                        echo $Character->getMoney();
                         ?>
                         </span>
                 </span>

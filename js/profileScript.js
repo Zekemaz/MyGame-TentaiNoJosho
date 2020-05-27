@@ -1,17 +1,68 @@
-// jQuery(function(){
-//     jQuery("#strengthButtonPlus").on('click',function(){
-//         console.log('lol')
-//         jQuery.ajax({
-//             type: 'POST',
-//             url: '../include/class/character.php',
-//             data: {
-//                 action: 'upStrength'
-//             },
-//             success : function(response) {
-//                 jQuery("#strengthPointSpan").html(response)
-//                 console.log(response)
-//
-//             }
-//         });
-//     });
-// });
+jQuery(function updateStr(){
+    jQuery("#strengthButtonPlus").on('click',function(){
+        jQuery.ajax({
+            type: 'POST',
+            url: '../include/ajax.php',
+            data: {
+                action: 'updateStrength'
+            },
+            dataType:'json',
+            success : function(response) {
+                jQuery("#strengthPointSpan").html(response.strength)
+                jQuery("#unused_statspoint").html(response.unused_statspoint)
+
+            }
+        });
+    });
+});
+jQuery(function updateInt(){
+    jQuery("#intelligenceButtonPlus").on('click',function(){
+        jQuery.ajax({
+            type: 'POST',
+            url: '../include/ajax.php',
+            data: {
+                action: 'updateIntelligence'
+            },
+            dataType:'json',
+            success : function(response) {
+                jQuery("#intelligencePointSpan").html(response.intelligence)
+                jQuery("#unused_statspoint").html(response.unused_statspoint)
+
+            }
+        });
+    });
+});
+jQuery(function updateAgi(){
+    jQuery("#agilityButtonPlus").on('click',function(){
+        jQuery.ajax({
+            type: 'POST',
+            url: '../include/ajax.php',
+            data: {
+                action: 'updateAgility'
+            },
+            dataType:'json',
+            success : function(response) {
+                jQuery("#agilityPointSpan").html(response.agility)
+                jQuery("#unused_statspoint").html(response.unused_statspoint)
+
+            }
+        });
+    });
+});
+jQuery(function updateLuck(){
+    jQuery("#luckButtonPlus").on('click',function(){
+        jQuery.ajax({
+            type: 'POST',
+            url: '../include/ajax.php',
+            data: {
+                action: 'updateLuck'
+            },
+            dataType:'json',
+            success : function(response) {
+                jQuery("#luckPointSpan").html(response.luck)
+                jQuery("#unused_statspoint").html(response.unused_statspoint)
+
+            }
+        });
+    });
+});

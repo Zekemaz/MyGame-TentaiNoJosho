@@ -1,7 +1,6 @@
 <?php
 // Require files
 require_once '../include/function.php';
-require_once '../include/class/user.php';
 // connexion to database
 $conn = dbConnection();
 

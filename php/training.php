@@ -6,11 +6,11 @@ if (!isset($_SESSION['username'])) {
 }
 require_once('../include/function.php');
 $conn = dbConnection();
-require_once('../include/class/character.php');
-$character = new Character;
+require_once('../include/class/Character.php');
+$Character = new Character;
 
 $username = $_SESSION['username'];
-$character->fetchStats();
+$Character->fetchStats();
 ?>
 <!DOCTYPE html>
 <html lang="en">
