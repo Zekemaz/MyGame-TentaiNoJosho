@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/include/class/Character.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/class/character.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/class/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/ajax.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/class/Character.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/class/Character.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/profileScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/profileScript.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
@@ -117,7 +116,7 @@
       <workItem from="1590066732203" duration="10449000" />
       <workItem from="1590427962890" duration="405000" />
       <workItem from="1590510155686" duration="6289000" />
-      <workItem from="1590571354682" duration="12813000" />
+      <workItem from="1590571354682" duration="21204000" />
     </task>
     <servers />
   </component>
@@ -153,9 +152,10 @@
       <screen x="0" y="23" width="1280" height="719" />
     </state>
     <state x="453" y="105" key="#com.intellij.ide.util.MemberChooser/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1590597936135" />
-    <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590603857184">
+    <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590661909058">
       <screen x="0" y="23" width="1280" height="719" />
     </state>
+    <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.719/1280.23.1920.1057@0.23.1280.719" timestamp="1590661909058" />
     <state x="378" y="136" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1280.719@0.23.1280.719" timestamp="1590603857184" />
     <state x="402" y="220" width="474" height="471" key="#com.intellij.tools.ToolEditorDialog" timestamp="1585776931023">
       <screen x="0" y="23" width="1280" height="719" />

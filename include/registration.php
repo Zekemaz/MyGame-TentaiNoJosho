@@ -4,7 +4,6 @@ require_once '../include/function.php';
 // connexion to database
 $conn = dbConnection();
 
-
 // Initializing variables
 $lastname = "";
 $firstname = "";

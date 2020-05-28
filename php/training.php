@@ -7,7 +7,7 @@ if (!isset($_SESSION['username'])) {
 require_once('../include/function.php');
 $conn = dbConnection();
 require_once('../include/class/Character.php');
-$Character = new Character;
+$Character = new Character();
 
 $username = $_SESSION['username'];
 $Character->fetchStats();
