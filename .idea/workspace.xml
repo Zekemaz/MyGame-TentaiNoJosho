@@ -3,12 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="064cd4fb-cfd7-49f3-adda-4f5e9883eef4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/UML_Diagram/ClassDiagram.mdj" beforeDir="false" afterPath="$PROJECT_DIR$/assets/UML_Diagram/ClassDiagram.mdj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/ajax.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/class/Character.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/class/Character.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/include/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/profileScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/profileScript.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/training.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/training.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

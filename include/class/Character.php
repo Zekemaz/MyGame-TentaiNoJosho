@@ -135,7 +135,6 @@ class Character
 
     public function updateStrength()
     {
-        var_dump('updateStrength function console log');
         $this->updateStat('strength', 1);
     }
     public function updateIntelligence()
