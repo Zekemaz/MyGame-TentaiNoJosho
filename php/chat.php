@@ -91,8 +91,8 @@ $conn = dbConnection();
                 <div id="btnTxtArea">
                     <form id="messageForm" name="formChat" method="post" action="../include/message.php">
                         <button id="sendBtn">Send</button>
-<!--                        <input type="text" name="message" id="textArea" autocomplete="off" autofocus placeholder="Type your message...">-->
-                        <textarea name="message" id="textArea" cols="1" rows="5" autocomplete="off" autofocus placeholder="Type your message..."></textarea>
+                        <input accesskey="enter" type="text" name="message" id="textArea" autocomplete="off" autofocus placeholder="Type your message...">
+<!--                        <textarea name="message" id="textArea" cols="1" rows="5" autocomplete="off" autofocus placeholder="Type your message..."></textarea>-->
                     </form>
                 </div>
             </div>
