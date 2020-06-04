@@ -1,17 +1,15 @@
 <?php
 session_start();
 $username = $_SESSION['username'];
-
 if (!isset($_SESSION['username'])) {
     $_SESSION['msg'] = "You must log in first";
     header('location: ../index.php');
 }
-
 require_once('../include/function.php');
 $conn = dbConnection();
+
 require_once('../include/class/Character.php');
 $Character = new Character();
-
 $Character->fetchStats();
 ?>
 <!DOCTYPE html>
